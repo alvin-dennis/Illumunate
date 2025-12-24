@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
+import Providers from "@/app/providers";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
@@ -62,18 +62,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${circe.variable} ${helvetica.variable} font-body antialiased text-muted-foreground`}
+        className={`${circe.variable} ${helvetica.variable} font-body bg-background antialiased text-muted-foreground`}
       >
         <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
           <LightRays
             color="#FE1A1B"
-            blur={30}
-            className="opacity-30"
+            className="opacity-60"
           />
         </div>
         <Navbar />
         <Suspense fallback={<Loader />}>
-          {children}
+          <Providers>
+            {children}
+          </Providers>
         </Suspense>
         <Footer />
       </body>
