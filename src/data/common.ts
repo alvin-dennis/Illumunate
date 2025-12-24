@@ -13,17 +13,17 @@ export const stats = [
 export const concepts = [
   {
     number: "01",
-    title: "Light",
+    title: "LIGHT",
     description: "Christmas encoded as energy—radiant, abstract, alive.",
   },
   {
     number: "02",
-    title: "Motion",
+    title: "MOTION",
     description: "Dynamic experiences that pulse with creative velocity.",
   },
   {
     number: "03",
-    title: "Unity",
+    title: "UNITY",
     description: "Colleges converge in a shared celebration of innovation.",
   },
 ];

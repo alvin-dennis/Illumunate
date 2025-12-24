@@ -132,13 +132,6 @@
   }
 }
 
-.bg-red-black-lux {
-  background: radial-gradient(circle at top,
-        #5c0000 0%,
-        #1a0000 45%,
-        #000000 100%);
-}
-
 * {
   scrollbar-width: none;
   -ms-overflow-style: none;
