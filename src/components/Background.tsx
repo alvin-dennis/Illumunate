@@ -1,8 +1,10 @@
 "use client"
 
+import { useIsMobile } from '@/hooks/useMobile'
 import { ShaderGradientCanvas, ShaderGradient } from '@shadergradient/react'
 
 export default function Background() {
+    const isMobile = useIsMobile();
     return (
         <ShaderGradientCanvas
             style={{
@@ -12,18 +14,18 @@ export default function Background() {
             }}
             lazyLoad={true}
             fov={35}
-            pixelDensity={1}
+            pixelDensity={isMobile ? 0.75 : 1} 
             pointerEvents="none"
         >
             <ShaderGradient
-                animate="on"
-                type="waterPlane"
+                animate={isMobile ? "off" : "on"}
+                type={isMobile ? "plane" : "waterPlane"}
                 wireframe={false}
                 shader="positionMix"
-                uTime={10}
-                uSpeed={0.4}
-                uStrength={2}
-                uDensity={2}
+                uTime={isMobile ? 0 : 10}
+                uSpeed={isMobile ? 0 : 0.4}
+                uStrength={isMobile ? 1 : 2}
+                uDensity={isMobile ? 1 : 2}
                 uFrequency={0}
                 uAmplitude={0}
                 positionX={0}

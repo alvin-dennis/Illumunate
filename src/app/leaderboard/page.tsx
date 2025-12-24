@@ -78,7 +78,7 @@ const Results = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            <span className="text-gradient-christmas">LEADERBOARDS</span>
+                            <span className="text-primary">LEADERBOARD</span>
                         </MotionH1>
 
                         <MotionP

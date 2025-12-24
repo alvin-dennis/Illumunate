@@ -21,7 +21,7 @@ export default function Events() {
                             Participate & Win
                         </span>
                         <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
-                            Zone-wise <span className="bg-gradient-to-r from-accent via-yellow-400 to-accent bg-clip-text text-transparent">Events</span>
+                            Zone-wise <span className="text-primary">Events</span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                             Explore events across all three zones. Each event offers unique challenges
