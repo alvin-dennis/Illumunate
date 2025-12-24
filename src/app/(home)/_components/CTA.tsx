@@ -2,8 +2,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MotionH2, MotionP, MotionDiv } from '@/components/Framer';
 
-const BrutalistCTA = () => {
-
+export default function CTA() {
   return (
     <section className="relative py-40 overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
@@ -12,10 +11,10 @@ const BrutalistCTA = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-6xl md:text-8xl lg:text-9xl leading-[0.85] mb-12"
+            className="text-6xl md:text-8xl lg:text-9xl mb-12"
           >
             JOIN THE<br />
-            <span className="text-gradient">LIGHT</span>
+            <span className="text-primary">FESTIVAL</span>
           </MotionH2>
           <MotionP
             initial={{ opacity: 0, y: 20 }}
@@ -44,5 +43,3 @@ const BrutalistCTA = () => {
     </section>
   );
 };
-
-export default BrutalistCTA;

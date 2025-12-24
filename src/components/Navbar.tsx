@@ -63,7 +63,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`relative text-sm font-mono tracking-wide transition-colors ${isActive(link.path)
+                className={`relative text-sm tracking-wide transition-colors ${isActive(link.path)
                     ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
                   }`}
@@ -79,7 +79,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA */}
           <MotionDiv
             className="
               hidden md:block
@@ -127,7 +126,7 @@ const Navbar = () => {
                     key={link.path}
                     href={link.path}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg font-mono text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-lg text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {link.name}
                   </Link>

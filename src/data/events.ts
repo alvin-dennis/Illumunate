@@ -1,0 +1,92 @@
+export const zonalEvents = {
+  aurora: [
+    {
+      id: 1,
+      name: "Design Sprint Challenge",
+      description: "Create stunning visual designs in a timed competition.",
+      points: 500,
+      deadline: "Dec 20, 2024",
+    },
+    {
+      id: 2,
+      name: "Digital Art Showcase",
+      description: "Showcase your best digital artwork and illustrations.",
+      points: 400,
+      deadline: "Dec 22, 2024",
+    },
+    {
+      id: 3,
+      name: "Logo Design Contest",
+      description: "Design a logo that captures the spirit of Illuµnate.",
+      points: 350,
+      deadline: "Dec 18, 2024",
+    },
+    {
+      id: 4,
+      name: "UI/UX Challenge",
+      description: "Redesign a Christmas-themed app interface.",
+      points: 450,
+      deadline: "Dec 21, 2024",
+    },
+  ],
+  spark: [
+    {
+      id: 5,
+      name: "Code Blitz Hackathon",
+      description: "24-hour hackathon to build innovative solutions.",
+      points: 600,
+      deadline: "Dec 19, 2024",
+    },
+    {
+      id: 6,
+      name: "Algorithm Challenge",
+      description: "Solve complex algorithmic problems under time pressure.",
+      points: 500,
+      deadline: "Dec 20, 2024",
+    },
+    {
+      id: 7,
+      name: "AI/ML Showcase",
+      description: "Build and present an AI-powered Christmas project.",
+      points: 550,
+      deadline: "Dec 23, 2024",
+    },
+    {
+      id: 8,
+      name: "Web Dev Sprint",
+      description: "Create a festive web application from scratch.",
+      points: 450,
+      deadline: "Dec 21, 2024",
+    },
+  ],
+  noel: [
+    {
+      id: 9,
+      name: "Carol Competition",
+      description: "Perform your best Christmas carols and win hearts.",
+      points: 400,
+      deadline: "Dec 22, 2024",
+    },
+    {
+      id: 10,
+      name: "Cultural Dance",
+      description: "Showcase traditional and modern dance forms.",
+      points: 450,
+      deadline: "Dec 23, 2024",
+    },
+    {
+      id: 11,
+      name: "Christmas Decoration",
+      description: "Transform spaces with festive decorations.",
+      points: 350,
+      deadline: "Dec 20, 2024",
+    },
+    {
+      id: 12,
+      name: "Secret Santa Drive",
+      description: "Participate in community gift-giving initiatives.",
+      points: 300,
+      deadline: "Dec 24, 2024",
+    },
+  ],
+};

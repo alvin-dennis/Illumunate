@@ -1,31 +1,12 @@
 "use client"
+
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import { zoneInfo } from '@/data/common';
 
-const zones = [
-  {
-    id: 'aurora',
-    name: 'AURORA',
-    subtitle: 'Creativity & Design',
-    color: 'crimson',
-  },
-  {
-    id: 'spark',
-    name: 'SPARK',
-    subtitle: 'Technical & Innovation',
-    color: 'champagne',
-  },
-  {
-    id: 'noel',
-    name: 'NOEL',
-    subtitle: 'Community & Culture',
-    color: 'emerald',
-  },
-];
-
-const AbstractZones = () => {
+export default function Zones(){
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [hoveredZone, setHoveredZone] = useState<string | null>(null);
@@ -45,7 +26,6 @@ const AbstractZones = () => {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[200px] transition-opacity duration-700"
         animate={{
           opacity: hoveredZone ? 0.3 : 0,
-          backgroundColor: hoveredZone ? getGlowColor(zones.find(z => z.id === hoveredZone)?.color || 'crimson') : 'transparent',
         }}
       />
 
@@ -63,7 +43,7 @@ const AbstractZones = () => {
                   Three Paths
                 </span>
               </div>
-              <h2 className="text-5xl md:text-7xl">ZONES</h2>
+              <h2 className="text-5xl md:text-7xl text-primary">ZONES</h2>
             </div>
             <p className="text-editorial text-sm max-w-xs">
               Each zone is a unique dimension of creative expression.
@@ -71,7 +51,7 @@ const AbstractZones = () => {
           </motion.div>
 
           <div className="space-y-2">
-            {zones.map((zone, index) => (
+            {zoneInfo.map((zone, index) => (
               <motion.div
                 key={zone.id}
                 initial={{ opacity: 0, x: -40 }}
@@ -99,19 +79,19 @@ const AbstractZones = () => {
 
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-8 md:gap-16">
-                        <span className="text-sm text-muted-foreground font-mono w-8">
+                        <span className="text-sm text-muted-foreground  w-8">
                           {String(index + 1).padStart(2, '0')}
                         </span>
                         <div>
-                          <h3 className="font-display text-4xl md:text-6xl lg:text-7xl group-hover:text-gradient transition-all duration-500">
+                          <h3 className="text-4xl md:text-6xl lg:text-7xl group-hover:text-gradient transition-all duration-500">
                             {zone.name}
                           </h3>
-                          <p className="text-editorial text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          <p className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             {zone.subtitle}
                           </p>
                         </div>
                       </div>
-                      
+
                       <motion.div
                         className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center"
                         animate={{
@@ -134,4 +114,3 @@ const AbstractZones = () => {
   );
 };
 
-export default AbstractZones;

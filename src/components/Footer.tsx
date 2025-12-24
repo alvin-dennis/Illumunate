@@ -2,11 +2,10 @@ import Link from 'next/link';
 import { MotionDiv } from './Framer';
 import Image from 'next/image';
 
-const AbstractFooter = () => {
+const Footer = () => {
   const links = [
     { name: 'Zones', path: '/zones' },
     { name: 'Events', path: '/events' },
-    { name: 'Colleges', path: '/colleges' },
     { name: 'Results', path: '/results' },
   ];
 
@@ -29,7 +28,7 @@ const AbstractFooter = () => {
                 </MotionDiv>
               </Link>
               <p className="text-editorial text-sm max-w-xs">
-                Illuminate is the annual Christmas festival organized by µLearn,
+                Illuµnate is the annual Christmas festival organized by µLearn,
                 bringing together students from various colleges to celebrate the
                 festive season with joy, creativity, and community spirit.
               </p>
@@ -37,7 +36,7 @@ const AbstractFooter = () => {
 
             <div className="flex flex-col md:flex-row gap-8 md:gap-16">
               <div>
-                <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground font-mono block mb-4">
+                <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground  block mb-4">
                   Navigate
                 </span>
                 <div className="flex flex-col gap-3">
@@ -45,16 +44,16 @@ const AbstractFooter = () => {
                     <Link
                       key={link.path}
                       href={link.path}
-                      className="text-foreground/70 hover:text-foreground transition-colors text-sm font-mono"
+                      className="text-foreground/70 hover:text-foreground transition-colors text-sm "
                     >
                       {link.name}
                     </Link>
                   ))}
                 </div>
               </div>
-              
+
               <div>
-                <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground font-mono block mb-4">
+                <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-4">
                   Connect
                 </span>
                 <div className="flex flex-col gap-3">
@@ -62,7 +61,7 @@ const AbstractFooter = () => {
                     <Link
                       key={social}
                       href="#"
-                      className="text-foreground/70 hover:text-foreground transition-colors text-sm font-mono"
+                      className="text-foreground/70 hover:text-foreground transition-colors text-sm"
                     >
                       {social}
                     </Link>
@@ -73,12 +72,12 @@ const AbstractFooter = () => {
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-border/20">
-            <span className="text-xs text-muted-foreground font-mono">
-              © 2025 Illuminate. All rights reserved.
+            <span className="text-xs text-muted-foreground">
+              © 2025 Illuµnate. All rights reserved.
             </span>
             <div className="flex items-center gap-2">
-              <span className="text-xs text-muted-foreground font-mono">Powered by</span>
-              <span className="text-xs text-foreground font-mono">μLearn × TPM</span>
+              <span className="text-xs text-muted-foreground">Powered by</span>
+              <span className="text-xs text-foreground">μLearn × TPM</span>
             </div>
           </div>
         </div>
@@ -87,4 +86,4 @@ const AbstractFooter = () => {
   );
 };
 
-export default AbstractFooter;
+export default Footer;

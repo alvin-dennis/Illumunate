@@ -1,26 +1,9 @@
 "use client";
 import { useState } from 'react';
-import AbstractOrbs from '@/app/(home)/_components/AbstractOrbs';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Trophy, Medal, Award, GraduationCap, User, Search, Sparkles } from 'lucide-react';
+import { Trophy, Medal, Award, GraduationCap, User, Sparkles } from 'lucide-react';
+import { collegeLeaderboard, studentLeaderboard } from '@/data/leaderboard';
 import CountUp from 'react-countup';
-
-const collegeLeaderboard = [
-    { rank: 1, name: 'Aurora', zone: 'Aurora', points: 4850 },
-    { rank: 2, name: 'Spark', zone: 'Spark', points: 4620 },
-    { rank: 3, name: 'Noel', zone: 'Noel', points: 4380 },
-];
-
-const studentLeaderboard = [
-    { rank: 1, name: 'Arun Kumar', college: 'College of Engineering Trivandrum', zone: 'Aurora', points: 980 },
-    { rank: 2, name: 'Priya Sharma', college: 'Model Engineering College', zone: 'Spark', points: 920 },
-    { rank: 3, name: 'Rahul Menon', college: 'Government Engineering College', zone: 'Aurora', points: 875 },
-    { rank: 4, name: 'Sneha Nair', college: 'Mar Athanasius College', zone: 'Aurora', points: 820 },
-    { rank: 5, name: 'Vishnu Prasad', college: 'Rajagiri School of Engineering', zone: 'Spark', points: 785 },
-    { rank: 6, name: 'Divya Raj', college: 'TKM College of Engineering', zone: 'Aurora', points: 750 },
-    { rank: 7, name: 'Arjun Das', college: 'LBS College of Engineering', zone: 'Aurora', points: 720 },
-    { rank: 8, name: 'Meera Pillai', college: 'NSS College of Engineering', zone: 'Noel', points: 695 },
-];
 
 const maxPoints = Math.max(...collegeLeaderboard.map(c => c.points));
 const maxStudentPoints = Math.max(...studentLeaderboard.map(s => s.points));
@@ -69,7 +52,6 @@ const Results = () => {
 
     return (
         <div className="min-h-screen">
-            <AbstractOrbs />
             <main className="pt-32 pb-24 relative z-10">
                 <div className="container mx-auto px-4">
                     <motion.div
@@ -84,15 +66,13 @@ const Results = () => {
                             transition={{ duration: 0.6 }}
                             className="flex items-center justify-center gap-4 mb-6"
                         >
-                            <div className="w-12 h-px bg-gradient-to-r from-transparent via-champagne to-transparent" />
-                            <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-mono">
+                            <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground ">
                                 Rankings
                             </span>
-                            <div className="w-12 h-px bg-gradient-to-r from-transparent via-champagne to-transparent" />
                         </motion.div>
 
                         <motion.h1
-                            className="font-display text-6xl md:text-8xl lg:text-9xl mb-6"
+                            className="text-6xl md:text-8xl lg:text-9xl mb-6"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.1 }}
@@ -106,7 +86,7 @@ const Results = () => {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.3 }}
                         >
-                            Track the luminaries of Illuminate
+                            Track the luminaries of Illuµnate
                         </motion.p>
                     </motion.div>
 
@@ -120,7 +100,7 @@ const Results = () => {
                             <motion.button
                                 key={tab}
                                 onClick={() => setActiveTab(tab as 'colleges' | 'students')}
-                                className={`relative px-8 py-4 font-display text-lg tracking-wider uppercase transition-all duration-300 ${activeTab === tab
+                                className={`relative px-8 py-4 text-lg tracking-wider uppercase transition-all duration-300 ${activeTab === tab
                                     ? 'text-foreground'
                                     : 'text-muted-foreground hover:text-foreground'
                                     }`}
@@ -203,7 +183,7 @@ const Results = () => {
                                                         {college.rank === 2 && <Medal className="w-7 h-7" style={{ color: rankStyle.color }} />}
                                                         {college.rank === 3 && <Award className="w-7 h-7" style={{ color: rankStyle.color }} />}
                                                         {college.rank > 3 && (
-                                                            <span className="font-display text-2xl text-muted-foreground">{college.rank}</span>
+                                                            <span className="text-2xl text-muted-foreground">{college.rank}</span>
                                                         )}
                                                     </motion.div>
                                                     <div className="flex-1 min-w-0 relative z-10">
@@ -213,7 +193,7 @@ const Results = () => {
                                                     </div>
                                                     <div className="relative z-10 text-right">
                                                         <motion.div
-                                                            className="font-display text-4xl md:text-5xl"
+                                                            className="text-4xl md:text-5xl"
                                                             style={{
                                                                 color: college.rank <= 3 ? rankStyle.color : 'hsl(var(--foreground))',
                                                                 textShadow: college.rank <= 3 ? `0 0 30px ${rankStyle.color}60` : 'none',
@@ -221,7 +201,7 @@ const Results = () => {
                                                         >
                                                             <CountUp end={college.points} duration={1500 + index * 100} />
                                                         </motion.div>
-                                                        <div className="text-xs text-muted-foreground font-mono tracking-wider uppercase mt-1">
+                                                        <div className="text-xs text-muted-foreground  tracking-wider uppercase mt-1">
                                                             points
                                                         </div>
                                                     </div>
@@ -298,15 +278,15 @@ const Results = () => {
                                                         {student.rank === 2 && <Medal className="w-7 h-7" style={{ color: rankStyle.color }} />}
                                                         {student.rank === 3 && <Award className="w-7 h-7" style={{ color: rankStyle.color }} />}
                                                         {student.rank > 3 && (
-                                                            <span className="font-display text-2xl text-muted-foreground">{student.rank}</span>
+                                                            <span className="text-2xl text-muted-foreground">{student.rank}</span>
                                                         )}
                                                     </motion.div>
 
                                                     <div className="flex-1 min-w-0 relative z-10">
-                                                        <h3 className="font-display text-xl md:text-2xl text-foreground truncate group-hover:text-gradient transition-all duration-300">
+                                                        <h3 className="text-xl md:text-2xl text-foreground truncate group-hover:text-gradient transition-all duration-300">
                                                             {student.name}
                                                         </h3>
-                                                        <p className="text-sm text-muted-foreground font-mono truncate mt-1">
+                                                        <p className="text-sm text-muted-foreground  truncate mt-1">
                                                             {student.college}
                                                         </p>
                                                         <div className="flex items-center gap-3 mt-2">
@@ -324,7 +304,7 @@ const Results = () => {
                                                     </div>
                                                     <div className="relative z-10 text-right">
                                                         <motion.div
-                                                            className="font-display text-4xl md:text-5xl"
+                                                            className="text-4xl md:text-5xl"
                                                             style={{
                                                                 color: student.rank <= 3 ? rankStyle.color : 'hsl(var(--foreground))',
                                                                 textShadow: student.rank <= 3 ? `0 0 30px ${rankStyle.color}60` : 'none',
@@ -332,7 +312,7 @@ const Results = () => {
                                                         >
                                                             <CountUp end={student.points} duration={1500 + index * 100} />
                                                         </motion.div>
-                                                        <div className="text-xs text-muted-foreground font-mono tracking-wider uppercase mt-1">
+                                                        <div className="text-xs text-muted-foreground  tracking-wider uppercase mt-1">
                                                             points
                                                         </div>
                                                     </div>
@@ -362,7 +342,7 @@ const Results = () => {
                                     className="text-center py-20"
                                 >
                                     <Sparkles className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                                    <p className="text-muted-foreground font-mono">No results found</p>
+                                    <p className="text-muted-foreground ">No results found</p>
                                 </motion.div>
                             )}
                     </div>
