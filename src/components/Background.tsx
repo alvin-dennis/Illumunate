@@ -16,7 +16,7 @@ export default function Background() {
             pointerEvents="none"
         >
             <ShaderGradient
-                animate="off"
+                animate="on"
                 type="waterPlane"
                 wireframe={false}
                 shader="positionMix"
