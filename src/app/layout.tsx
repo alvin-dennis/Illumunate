@@ -10,15 +10,15 @@ import Background from "@/components/Background";
 
 
 export const metadata: Metadata = {
-  title: "Illumunate — µLearn Christmas Festival",
+  title: "Illuµnate — µLearn Christmas Festival",
   description:
-    "Celebrate the festive spirit with Illumunate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
+    "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
   authors: [{ name: "µLearn", url: "https://illumunate.mulearn.org/" }],
   openGraph: {
-    title: "Illumunate — µLearn Christmas Festival",
+    title: "Illuµnate — µLearn Christmas Festival",
     description:
-      "Celebrate the festive spirit with Illumunate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
-    siteName: "Illumunate — µLearn Christmas Festival",
+      "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
+    siteName: "Illuµnate — µLearn Christmas Festival",
     url: "https://illumunate.mulearn.org/",
     type: "website",
     images: [
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Illumunate — µLearn Christmas Festival",
+    title: "Illuµnate — µLearn Christmas Festival",
     description:
-      "Celebrate the festive spirit with Illumunate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
+      "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
     images: ["/logo.png"],
   },
   icons: {
