@@ -1,14 +1,9 @@
 import Link from 'next/link';
 import { MotionDiv } from './Framer';
 import Image from 'next/image';
+import { links } from '@/data/common';
 
-const Footer = () => {
-  const links = [
-    { name: 'Zones', path: '/zones' },
-    { name: 'Events', path: '/events' },
-    { name: 'Results', path: '/results' },
-  ];
-
+export default function Footer() {
   return (
     <footer className="relative py-20 border-t border-border/30">
       <div className="container mx-auto px-4">
@@ -77,7 +72,7 @@ const Footer = () => {
             </span>
             <div className="flex items-center gap-2">
               <span className="text-xs text-muted-foreground">Powered by</span>
-              <span className="text-xs text-foreground">μLearn × TPM</span>
+              <span className="text-xs text-foreground">μLearn</span>
             </div>
           </div>
         </div>
@@ -86,4 +81,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;

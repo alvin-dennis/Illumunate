@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { MotionDiv } from "./Framer";
+import { AnimatePresence } from "framer-motion";
+import { MotionDiv, MotionHeader } from "./Framer";
+import { navLinks } from "@/data/common";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
@@ -20,16 +21,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "Zones", path: "/zones" },
-    { name: "Events", path: "/events" },
-    { name: "Leaderboard", path: "/leaderboard" },
-  ];
-
   const isActive = (path: string) => pathname === path;
 
   return (
-    <motion.nav
+    <MotionHeader
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
@@ -70,7 +65,7 @@ const Navbar = () => {
               >
                 {link.name}
                 {isActive(link.path) && (
-                  <motion.div
+                  <MotionDiv
                     layoutId="nav-indicator"
                     className="absolute -bottom-1 left-0 right-0 h-px bg-primary"
                   />
@@ -108,7 +103,7 @@ const Navbar = () => {
 
         <AnimatePresence>
           {isMobileMenuOpen && (
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
@@ -134,11 +129,11 @@ const Navbar = () => {
                   </Link>
                 ))}
               </div>
-            </motion.div>
+            </MotionDiv>
           )}
         </AnimatePresence>
       </div>
-    </motion.nav>
+    </MotionHeader>
   );
 };
 

@@ -1,14 +1,12 @@
 "use client"
 
 import Link from 'next/link';
-import { motion, useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { zoneInfo } from '@/data/common';
+import { MotionDiv } from '@/components/Framer';
 
 export default function Zones(){
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [hoveredZone, setHoveredZone] = useState<string | null>(null);
 
   const getGlowColor = (color: string) => {
@@ -21,8 +19,8 @@ export default function Zones(){
   };
 
   return (
-    <section ref={ref} className="relative py-40 overflow-hidden">
-      <motion.div
+    <section className="relative py-40 overflow-hidden">
+      <MotionDiv
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[200px] transition-opacity duration-700"
         animate={{
           opacity: hoveredZone ? 0.3 : 0,
@@ -31,9 +29,9 @@ export default function Zones(){
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
+            animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="mb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-6"
           >
@@ -44,29 +42,29 @@ export default function Zones(){
                 </span>
               </div>
               <h2 className="text-5xl md:text-7xl text-primary">ZONES</h2>
+              <p className="text-sm mt-2">
+                Each zone is a unique dimension of creative expression.
+              </p>
             </div>
-            <p className="text-editorial text-sm max-w-xs">
-              Each zone is a unique dimension of creative expression.
-            </p>
-          </motion.div>
+          </MotionDiv>
 
           <div className="space-y-2">
             {zoneInfo.map((zone, index) => (
-              <motion.div
+              <MotionDiv
                 key={zone.id}
                 initial={{ opacity: 0, x: -40 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.15 }}
               >
                 <Link href={`/zones?zone=${zone.id}`}>
-                  <motion.div
+                  <MotionDiv
                     className="group relative py-8 md:py-12 border-t border-border/30 cursor-pointer"
                     onMouseEnter={() => setHoveredZone(zone.id)}
                     onMouseLeave={() => setHoveredZone(null)}
                     whileHover={{ x: 20 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <motion.div
+                    <MotionDiv
                       className="absolute top-0 left-0 right-0 h-px"
                       style={{ backgroundColor: getGlowColor(zone.color) }}
                       initial={{ scaleX: 0, opacity: 0 }}
@@ -92,7 +90,7 @@ export default function Zones(){
                         </div>
                       </div>
 
-                      <motion.div
+                      <MotionDiv
                         className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center"
                         animate={{
                           borderColor: hoveredZone === zone.id ? getGlowColor(zone.color) : 'hsl(var(--border) / 0.5)',
@@ -101,11 +99,11 @@ export default function Zones(){
                         transition={{ duration: 0.3 }}
                       >
                         <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
-                      </motion.div>
+                      </MotionDiv>
                     </div>
-                  </motion.div>
+                  </MotionDiv>
                 </Link>
-              </motion.div>
+              </MotionDiv>
             ))}
           </div>
         </div>

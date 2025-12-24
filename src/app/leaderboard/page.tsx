@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Medal, Award, GraduationCap, User, Sparkles } from 'lucide-react';
 import { collegeLeaderboard, studentLeaderboard } from '@/data/leaderboard';
 import CountUp from 'react-countup';
+import { MotionDiv, MotionH1, MotionP } from '@/components/Framer';
 
 const maxPoints = Math.max(...collegeLeaderboard.map(c => c.points));
 const maxStudentPoints = Math.max(...studentLeaderboard.map(s => s.points));
@@ -54,13 +55,13 @@ const Results = () => {
         <div className="min-h-screen">
             <main className="pt-32 pb-24 relative z-10">
                 <div className="container mx-auto px-4">
-                    <motion.div
+                    <MotionDiv
                         className="text-center mb-20"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
                     >
-                        <motion.div
+                        <MotionDiv
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
@@ -69,28 +70,28 @@ const Results = () => {
                             <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground ">
                                 Rankings
                             </span>
-                        </motion.div>
+                        </MotionDiv>
 
-                        <motion.h1
+                        <MotionH1
                             className="text-6xl md:text-8xl lg:text-9xl mb-6"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
                             <span className="text-gradient-christmas">LEADERBOARDS</span>
-                        </motion.h1>
+                        </MotionH1>
 
-                        <motion.p
+                        <MotionP
                             className="text-editorial text-lg max-w-xl mx-auto"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.3 }}
                         >
                             Track the luminaries of Illuµnate
-                        </motion.p>
-                    </motion.div>
+                        </MotionP>
+                    </MotionDiv>
 
-                    <motion.div
+                    <MotionDiv
                         className="flex justify-center gap-4 mb-12"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -112,7 +113,7 @@ const Results = () => {
                                     {tab === 'colleges' ? 'Colleges' : 'Students'}
                                 </span>
                                 {activeTab === tab && (
-                                    <motion.div
+                                    <MotionDiv
                                         layoutId="activeTab"
                                         className="absolute inset-0 glass-christmas rounded-lg"
                                         style={{
@@ -123,11 +124,11 @@ const Results = () => {
                                 )}
                             </motion.button>
                         ))}
-                    </motion.div>
+                    </MotionDiv>
                     <div className="max-w-5xl mx-auto">
                         <AnimatePresence mode="wait">
                             {activeTab === 'colleges' ? (
-                                <motion.div
+                                <MotionDiv
                                     key="colleges"
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
@@ -142,7 +143,7 @@ const Results = () => {
                                         const isHovered = hoveredRank === college.rank;
 
                                         return (
-                                            <motion.div
+                                            <MotionDiv
                                                 key={college.rank}
                                                 initial={{ opacity: 0, x: -40 }}
                                                 animate={{ opacity: 1, x: 0 }}
@@ -151,7 +152,7 @@ const Results = () => {
                                                 onMouseLeave={() => setHoveredRank(null)}
                                                 className="group relative"
                                             >
-                                                <motion.div
+                                                <MotionDiv
                                                     className="relative flex items-center gap-6 p-6 rounded-2xl overflow-hidden"
                                                     style={{
                                                         background: rankStyle.bg,
@@ -162,7 +163,7 @@ const Results = () => {
                                                     }}
                                                     transition={{ duration: 0.3 }}
                                                 >
-                                                    <motion.div
+                                                    <MotionDiv
                                                         className="absolute inset-0 opacity-20"
                                                         style={{
                                                             background: `linear-gradient(90deg, ${zoneColor.color}20 0%, transparent ${barWidth}%)`,
@@ -171,7 +172,7 @@ const Results = () => {
                                                         animate={{ scaleX: 1 }}
                                                         transition={{ duration: 1, delay: index * 0.1 }}
                                                     />
-                                                    <motion.div
+                                                    <MotionDiv
                                                         className="relative z-10 w-16 h-16 rounded-xl flex items-center justify-center shrink-0"
                                                         style={{
                                                             background: rankStyle.bg,
@@ -185,14 +186,14 @@ const Results = () => {
                                                         {college.rank > 3 && (
                                                             <span className="text-2xl text-muted-foreground">{college.rank}</span>
                                                         )}
-                                                    </motion.div>
+                                                    </MotionDiv>
                                                     <div className="flex-1 min-w-0 relative z-10">
                                                         <h3 className="text-xl md:text-2xl text-foreground truncate group-hover:text-gradient transition-all duration-300">
                                                             {college.name}
                                                         </h3>
                                                     </div>
                                                     <div className="relative z-10 text-right">
-                                                        <motion.div
+                                                        <MotionDiv
                                                             className="text-4xl md:text-5xl"
                                                             style={{
                                                                 color: college.rank <= 3 ? rankStyle.color : 'hsl(var(--foreground))',
@@ -200,12 +201,12 @@ const Results = () => {
                                                             }}
                                                         >
                                                             <CountUp end={college.points} duration={1500 + index * 100} />
-                                                        </motion.div>
+                                                        </MotionDiv>
                                                         <div className="text-xs text-muted-foreground  tracking-wider uppercase mt-1">
                                                             points
                                                         </div>
                                                     </div>
-                                                    <motion.div
+                                                    <MotionDiv
                                                         className="absolute bottom-0 left-0 h-px"
                                                         style={{
                                                             background: `linear-gradient(90deg, ${zoneColor.color}, transparent)`,
@@ -215,13 +216,13 @@ const Results = () => {
                                                         animate={{ scaleX: 1 }}
                                                         transition={{ duration: 1.2, delay: index * 0.1 }}
                                                     />
-                                                </motion.div>
-                                            </motion.div>
+                                                </MotionDiv>
+                                            </MotionDiv>
                                         );
                                     })}
-                                </motion.div>
+                                </MotionDiv>
                             ) : (
-                                <motion.div
+                                <MotionDiv
                                     key="students"
                                     initial={{ opacity: 0, x: 20 }}
                                     animate={{ opacity: 1, x: 0 }}
@@ -236,7 +237,7 @@ const Results = () => {
                                         const isHovered = hoveredRank === student.rank;
 
                                         return (
-                                            <motion.div
+                                            <MotionDiv
                                                 key={student.rank}
                                                 initial={{ opacity: 0, x: 40 }}
                                                 animate={{ opacity: 1, x: 0 }}
@@ -245,7 +246,7 @@ const Results = () => {
                                                 onMouseLeave={() => setHoveredRank(null)}
                                                 className="group relative"
                                             >
-                                                <motion.div
+                                                <MotionDiv
                                                     className="relative flex items-center gap-6 p-6 rounded-2xl overflow-hidden"
                                                     style={{
                                                         background: rankStyle.bg,
@@ -255,7 +256,7 @@ const Results = () => {
                                                     }}
                                                     transition={{ duration: 0.3 }}
                                                 >
-                                                    <motion.div
+                                                    <MotionDiv
                                                         className="absolute inset-0 opacity-15"
                                                         style={{
                                                             background: `linear-gradient(90deg, hsl(350 75% 50% / 0.3) 0%, transparent ${barWidth}%)`,
@@ -264,9 +265,7 @@ const Results = () => {
                                                         animate={{ scaleX: 1 }}
                                                         transition={{ duration: 1, delay: index * 0.1 }}
                                                     />
-
-                                                    {/* Rank */}
-                                                    <motion.div
+                                                    <MotionDiv
                                                         className="relative z-10 w-16 h-16 rounded-xl flex items-center justify-center shrink-0"
                                                         style={{
                                                             background: rankStyle.bg,
@@ -280,7 +279,7 @@ const Results = () => {
                                                         {student.rank > 3 && (
                                                             <span className="text-2xl text-muted-foreground">{student.rank}</span>
                                                         )}
-                                                    </motion.div>
+                                                    </MotionDiv>
 
                                                     <div className="flex-1 min-w-0 relative z-10">
                                                         <h3 className="text-xl md:text-2xl text-foreground truncate group-hover:text-gradient transition-all duration-300">
@@ -303,7 +302,7 @@ const Results = () => {
 
                                                     </div>
                                                     <div className="relative z-10 text-right">
-                                                        <motion.div
+                                                        <MotionDiv
                                                             className="text-4xl md:text-5xl"
                                                             style={{
                                                                 color: student.rank <= 3 ? rankStyle.color : 'hsl(var(--foreground))',
@@ -311,12 +310,12 @@ const Results = () => {
                                                             }}
                                                         >
                                                             <CountUp end={student.points} duration={1500 + index * 100} />
-                                                        </motion.div>
+                                                        </MotionDiv>
                                                         <div className="text-xs text-muted-foreground  tracking-wider uppercase mt-1">
                                                             points
                                                         </div>
                                                     </div>
-                                                    <motion.div
+                                                    <MotionDiv
                                                         className="absolute bottom-0 left-0 h-px"
                                                         style={{
                                                             background: `linear-gradient(90deg, hsl(350 75% 50%), hsl(40 80% 60%), transparent)`,
@@ -326,24 +325,24 @@ const Results = () => {
                                                         animate={{ scaleX: 1 }}
                                                         transition={{ duration: 1.2, delay: index * 0.1 }}
                                                     />
-                                                </motion.div>
-                                            </motion.div>
+                                                </MotionDiv>
+                                            </MotionDiv>
                                         );
                                     })}
-                                </motion.div>
+                                </MotionDiv>
                             )}
                         </AnimatePresence>
 
                         {((activeTab === 'colleges' && collegeLeaderboard.length === 0) ||
                             (activeTab === 'students' && studentLeaderboard.length === 0)) && (
-                                <motion.div
+                                <MotionDiv
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     className="text-center py-20"
                                 >
                                     <Sparkles className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
                                     <p className="text-muted-foreground ">No results found</p>
-                                </motion.div>
+                                </MotionDiv>
                             )}
                     </div>
                 </div>

@@ -1,3 +1,9 @@
+export const navLinks = [
+  { name: "Zones", path: "/zones" },
+  { name: "Events", path: "/events" },
+  { name: "Leaderboard", path: "/leaderboard" },
+];
+
 export const stats = [
   { value: "3", label: "Zones" },
   { value: "15+", label: "Events" },
@@ -41,4 +47,10 @@ export const zoneInfo = [
     subtitle: "Community & Culture",
     color: "emerald",
   },
+];
+
+export const links = [
+  { name: "Zones", path: "/zones" },
+  { name: "Events", path: "/events" },
+  { name: "Results", path: "/results" },
 ];

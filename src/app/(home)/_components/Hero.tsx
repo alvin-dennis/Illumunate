@@ -31,17 +31,17 @@ const fadeInUp: Variants = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen">
-      <div className="top-5 h-screen flex items-center justify-center overflow-hidden">
+      <div className="h-screen flex items-center justify-center overflow-hidden">
         <MotionDiv
           variants={containerVariants}
           initial="hidden"
           animate={"visible"}
           className="relative z-10 container mx-auto px-4 text-center"
         >
-          <MotionDiv variants={fadeInUp} className="mb-3 flex justify-center">
+          <MotionDiv variants={fadeInUp} className="flex justify-center">
             <span className="relative inline-flex items-center px-4 py-2 text-md font-semibold text-foreground">
               <span className="absolute inset-0 -z-10 rounded-full bg-primary" />
-              μLearn × TPM presents
+              μLearn presents
             </span>
           </MotionDiv>
 
@@ -76,7 +76,7 @@ export default function Hero() {
             </Link>
           </MotionDiv>
 
-          <MotionDiv variants={fadeInUp} className="mt-24 flex justify-center gap-16 md:gap-24">
+          <MotionDiv variants={fadeInUp} className="mt-10 flex justify-center gap-16 md:gap-24">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-bold text-primary text-4xl md:text-5xl mb-2">{stat.value}</div>

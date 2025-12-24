@@ -6,7 +6,7 @@ import Providers from "@/app/providers";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
-import { LightRays } from "@/components/ui/light-rays";
+import Background from "@/components/Background";
 
 
 export const metadata: Metadata = {
@@ -65,10 +65,7 @@ export default function RootLayout({
         className={`${circe.variable} ${helvetica.variable} font-body bg-background antialiased text-muted-foreground`}
       >
         <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-          <LightRays
-            color="#FE1A1B"
-            className="opacity-60"
-          />
+          <Background />
         </div>
         <Navbar />
         <Suspense fallback={<Loader />}>
