@@ -42,7 +42,7 @@ const Navbar = () => {
           <Link href="/" className="relative z-10">
             <MotionDiv whileHover={{ scale: 1.03 }}>
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Illumunate Logo"
                 width={170}
                 height={170}
@@ -59,8 +59,8 @@ const Navbar = () => {
                 key={link.path}
                 href={link.path}
                 className={`relative text-sm tracking-wide transition-colors ${isActive(link.path)
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                  ? "text-foreground"
+                  : "text-muted-foreground hover:text-foreground"
                   }`}
               >
                 {link.name}

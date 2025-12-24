@@ -13,7 +13,7 @@ export default function Footer() {
               <Link href="/" className="block mb-6">
                 <MotionDiv whileHover={{ scale: 1.03 }}>
                   <Image
-                    src="/logo.png"
+                    src="/logo.svg"
                     alt="Illumunate Logo"
                     width={170}
                     height={170}

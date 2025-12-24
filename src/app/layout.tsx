@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png",
-        alt: "Illumunate Christmas Festival",
+        url: "/logo.svg",
+        alt: "Illuµnate Christmas Festival",
       },
     ],
   },
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     title: "Illuµnate — µLearn Christmas Festival",
     description:
       "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
-    images: ["/logo.png"],
+    images: ["/logo.svg"],
   },
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
   },
   metadataBase: new URL("https://illumunate.mulearn.org/"),
 };
