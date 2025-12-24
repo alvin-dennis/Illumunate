@@ -87,9 +87,11 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            <Button variant={"default"} className="px-5 py-2">
-            Join
-          </Button>
+            <Link href="/zones">
+              <Button variant="default" className="px-5 py-2">
+                Join
+              </Button>
+            </Link>
           </MotionDiv>
 
           <button
@@ -123,7 +125,7 @@ const Navbar = () => {
               <div className="flex flex-col gap-4">
                 {navLinks.map((link) => (
                   <Link
-                    key={link.path}
+                    key={link.name}
                     href={link.path}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="text-lg text-muted-foreground hover:text-foreground transition-colors"

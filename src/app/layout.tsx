@@ -1,22 +1,13 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
-import AbstractOrbs from "@/components/ui/orbs";
-import { SnowfallBackground } from "@/components/ui/snow-flakes";
+import { LightRays } from "@/components/ui/light-rays";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Illumunate — µLearn Christmas Festival",
@@ -51,6 +42,18 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://illumunate.mulearn.org/"),
 };
 
+const circe = localFont({
+  src: "../components/fonts/circe-std.ttf",
+  variable: "--font-display",
+  display: "swap",
+});
+
+const helvetica = localFont({
+  src: "../components/fonts/helvetica.otf",
+  variable: "--font-body",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -59,25 +62,22 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-muted-foreground`}
+        className={`${circe.variable} ${helvetica.variable} font-body antialiased text-muted-foreground`}
       >
-        <div className="fixed inset-0 w-screen h-screen min-h-dvh min-w-dvw -z-10 overflow-hidden pointer-events-none">
-          <AbstractOrbs />
-          <SnowfallBackground
-            count={200}
-            speed={0.1}
-            minSize={1}
-            maxSize={40}
-            minOpacity={0}
-            maxOpacity={0.3}
-            color="#ffffff"
-            wind
+        <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+          <LightRays
+            color="#FE1A1B"
+            blur={30}
+            className="opacity-30"
           />
         </div>
         <Navbar />
-        <Suspense fallback={<Loader />}>{children}</Suspense>
+        <Suspense fallback={<Loader />}>
+          {children}
+        </Suspense>
         <Footer />
       </body>
     </html>
+
   );
 }

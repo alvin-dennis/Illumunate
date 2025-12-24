@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Variants } from "framer-motion";
 import { MotionDiv, MotionP } from "@/components/Framer";
@@ -33,15 +31,15 @@ const fadeInUp: Variants = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen">
-      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+      <div className="top-5 h-screen flex items-center justify-center overflow-hidden">
         <MotionDiv
           variants={containerVariants}
           initial="hidden"
           animate={"visible"}
           className="relative z-10 container mx-auto px-4 text-center"
         >
-          <MotionDiv variants={fadeInUp} className="mb-8 flex justify-center">
-            <span className="relative inline-flex items-center px-6 py-3 text-lg font-semibold text-foreground">
+          <MotionDiv variants={fadeInUp} className="mb-3 flex justify-center">
+            <span className="relative inline-flex items-center px-4 py-2 text-md font-semibold text-foreground">
               <span className="absolute inset-0 -z-10 rounded-full bg-primary" />
               μLearn × TPM presents
             </span>

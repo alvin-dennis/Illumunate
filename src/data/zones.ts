@@ -8,9 +8,9 @@ export const zoneData = [
     description:
       "Unleash your artistic vision through design challenges, creative showcases, and visual storytelling events. Aurora is where imagination meets skill.",
     icon: Palette,
-    gradient: "from-purple-600 via-pink-500 to-purple-600",
-    color: "text-muted",
-    bgColor: "bg-muted/10",
+    gradient: "from-red-600 via-black-500 to-red-600",
+    color: "text-muted-foreground",
+    bgColor: "bg-muted-foreground/10",
     borderColor: "border-muted/30",
     events: 5,
     participants: 450,
