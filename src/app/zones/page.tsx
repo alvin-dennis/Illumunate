@@ -51,7 +51,6 @@ export default function Zones() {
                             <Button
                                 key={zone.id}
                                 variant={selectedZone === zone.id ? "default" : "ghost"}
-                                size="lg"
                                 onClick={() => setSelectedZone(zone.id)}
                                 className="gap-2"
                             >
@@ -93,7 +92,7 @@ export default function Zones() {
                                     </p>
 
                                     <Link href={`/events?zone=${activeZone.id}`}>
-                                        <Button variant="default" size="lg" className="group gap-2">
+                                        <Button variant="default" className="group gap-2">
                                             View All Events
                                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                         </Button>

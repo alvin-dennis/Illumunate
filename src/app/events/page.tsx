@@ -34,7 +34,6 @@ export default function Events() {
                             <Button
                                 key={zone.id}
                                 variant={activeZone === zone.id ? "default" : "ghost"}
-                                size="lg"
                                 onClick={() => setActiveZone(zone.id as 'aurora' | 'spark' | 'noel')}
                                 className="gap-2"
                             >
@@ -80,7 +79,7 @@ export default function Events() {
                                                 <Clock className="w-4 h-4" />
                                                 <span>Deadline: {event.deadline}</span>
                                             </div>
-                                            <Button variant="default" size="sm" className="group/btn">
+                                            <Button variant="default" className="group/btn">
                                                 Participate
                                                 <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                                             </Button>

@@ -1,10 +1,11 @@
 "use client";
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { Trophy, Medal, Award, GraduationCap, User, Sparkles } from 'lucide-react';
 import { collegeLeaderboard, studentLeaderboard } from '@/data/leaderboard';
 import CountUp from 'react-countup';
 import { MotionDiv, MotionH1, MotionP } from '@/components/Framer';
+import { Button } from '@/components/ui/button';
 
 const maxPoints = Math.max(...collegeLeaderboard.map(c => c.points));
 const maxStudentPoints = Math.max(...studentLeaderboard.map(s => s.points));
@@ -98,31 +99,36 @@ const Results = () => {
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
                         {['colleges', 'students'].map((tab) => (
-                            <motion.button
+                            <Button
                                 key={tab}
-                                onClick={() => setActiveTab(tab as 'colleges' | 'students')}
+                                variant={activeTab === tab ? "default" : "ghost"}
+                                onClick={() => setActiveTab(tab as "colleges" | "students")}
                                 className={`relative px-8 py-4 text-lg tracking-wider uppercase transition-all duration-300 ${activeTab === tab
-                                    ? 'text-foreground'
-                                    : 'text-muted-foreground hover:text-foreground'
+                                    ? "text-foreground"
+                                    : "text-muted-foreground hover:text-foreground"
                                     }`}
-                                whileHover={{ scale: 1.02 }}
-                                whileTap={{ scale: 0.98 }}
                             >
                                 <span className="relative z-10 flex items-center gap-3">
-                                    {tab === 'colleges' ? <GraduationCap className="w-5 h-5" /> : <User className="w-5 h-5" />}
-                                    {tab === 'colleges' ? 'Colleges' : 'Students'}
+                                    {tab === "colleges" ? (
+                                        <GraduationCap className="w-5 h-5" />
+                                    ) : (
+                                        <User className="w-5 h-5" />
+                                    )}
+                                    {tab === "colleges" ? "Colleges" : "Students"}
                                 </span>
+
                                 {activeTab === tab && (
                                     <MotionDiv
                                         layoutId="activeTab"
                                         className="absolute inset-0 glass-christmas rounded-lg"
                                         style={{
-                                            boxShadow: '0 0 30px hsl(350 75% 50% / 0.2)',
+                                            boxShadow: "0 0 30px hsl(350 75% 50% / 0.2)",
                                         }}
-                                        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
                                     />
                                 )}
-                            </motion.button>
+                            </Button>
+
                         ))}
                     </MotionDiv>
                     <div className="max-w-5xl mx-auto">
