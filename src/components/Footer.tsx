@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { MotionDiv } from './Framer';
 import Image from 'next/image';
-import { links } from '@/data/common';
+import { links, socials } from '@/data/common';
 
 export default function Footer() {
   return (
@@ -52,15 +52,18 @@ export default function Footer() {
                   Connect
                 </span>
                 <div className="flex flex-col gap-3">
-                  {['Twitter', 'Instagram', 'Discord'].map((social) => (
+                  {socials.map((social) => (
                     <Link
-                      key={social}
-                      href="#"
+                      key={social.name}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/70 hover:text-foreground transition-colors text-sm"
                     >
-                      {social}
+                      {social.name}
                     </Link>
                   ))}
+
                 </div>
               </div>
             </div>
@@ -72,7 +75,15 @@ export default function Footer() {
             </span>
             <div className="flex items-center gap-2">
               <span className="text-xs text-muted-foreground">Powered by</span>
-              <span className="text-xs text-foreground">μLearn</span>
+              <Link
+                href="https://mulearn.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-foreground hover:underline"
+              >
+                μLearn
+              </Link>
+
             </div>
           </div>
         </div>

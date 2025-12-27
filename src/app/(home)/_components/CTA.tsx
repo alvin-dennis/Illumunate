@@ -29,12 +29,11 @@ export default function CTA() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <Link href="/register">
+            <Link href="/zones">
               <Button
                 variant={"default"}
-                className="px-4 py-2"
               >
-                <span className="relative z-10">REGISTER NOW</span>
+                <span className="relative z-10">JOIN NOW</span>
               </Button>
             </Link>
           </MotionDiv>

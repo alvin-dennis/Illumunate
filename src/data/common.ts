@@ -6,51 +6,40 @@ export const navLinks = [
 
 export const stats = [
   { value: "3", label: "Zones" },
-  { value: "15+", label: "Events" },
+  { value: "30+", label: "Events" },
   { value: "20+", label: "Colleges" },
 ];
 
 export const concepts = [
   {
     number: "01",
-    title: "LIGHT",
-    description: "Christmas encoded as energy—radiant, abstract, alive.",
+    title: "ILLUMINATION",
+    description:
+      "Christmas expressed through light and spirit—hope glowing across campuses, igniting creativity and celebration.",
   },
   {
     number: "02",
-    title: "MOTION",
-    description: "Dynamic experiences that pulse with creative velocity.",
+    title: "CONVERGENCE",
+    description:
+      "Three zones, one celebration. North, Central, and South Kerala unite through culture, competition, and shared joy.",
   },
   {
     number: "03",
-    title: "UNITY",
-    description: "Colleges converge in a shared celebration of innovation.",
+    title: "RESONANCE",
+    description:
+      "Ideas, talents, and stories echo beyond stages—leaving a lasting impact across every zone of Illuminate.",
   },
 ];
 
-export const zoneInfo = [
-  {
-    id: "aurora",
-    name: "AURORA",
-    subtitle: "Creativity & Design",
-    color: "crimson",
-  },
-  {
-    id: "spark",
-    name: "SPARK",
-    subtitle: "Technical & Innovation",
-    color: "champagne",
-  },
-  {
-    id: "noel",
-    name: "NOEL",
-    subtitle: "Community & Culture",
-    color: "emerald",
-  },
-];
 
 export const links = [
   { name: "Zones", path: "/zones" },
   { name: "Events", path: "/events" },
-  { name: "Results", path: "/results" },
+  { name: "Results", path: "/leaderboard" },
+];
+
+export const socials = [
+  { name: "Instagram", url: "https://instagram.com/mulearn.official/" },
+  { name: "YouTube", url: "https://youtube.com/c/mulearn" },
+  { name: "Facebook", url: "http://facebook.com/gtechmulearn" },
 ];

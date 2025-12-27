@@ -12,7 +12,7 @@ const maxStudentPoints = Math.max(...studentLeaderboard.map(s => s.points));
 
 const getZoneColor = (zone: string) => {
     switch (zone) {
-        case 'Aurora': return { color: 'hsl(350 75% 50%)', name: 'crimson' };
+        case 'north': return { color: 'hsl(350 75% 50%)', name: 'crimson' };
         case 'Spark': return { color: 'hsl(40 80% 60%)', name: 'champagne' };
         case 'Noel': return { color: 'hsl(160 70% 40%)', name: 'emerald' };
         default: return { color: 'hsl(350 75% 50%)', name: 'crimson' };
@@ -103,7 +103,7 @@ const Results = () => {
                                 key={tab}
                                 variant={activeTab === tab ? "default" : "ghost"}
                                 onClick={() => setActiveTab(tab as "colleges" | "students")}
-                                className={`relative px-8 py-4 text-lg tracking-wider uppercase transition-all duration-300 ${activeTab === tab
+                                className={`relative text-lg uppercase transition-all duration-300 ${activeTab === tab
                                     ? "text-foreground"
                                     : "text-muted-foreground hover:text-foreground"
                                     }`}
@@ -194,7 +194,7 @@ const Results = () => {
                                                         )}
                                                     </MotionDiv>
                                                     <div className="flex-1 min-w-0 relative z-10">
-                                                        <h3 className="text-xl md:text-2xl text-foreground truncate group-hover:text-gradient transition-all duration-300">
+                                                        <h3 className="text-xl md:text-2xl uppercase text-foreground truncate group-hover:text-gradient transition-all duration-300">
                                                             {college.name}
                                                         </h3>
                                                     </div>
@@ -296,7 +296,7 @@ const Results = () => {
                                                         </p>
                                                         <div className="flex items-center gap-3 mt-2">
                                                             <span
-                                                                className="text-xs tracking-wide px-3 py-1 rounded-full"
+                                                                className="text-xs tracking-wide uppercase rounded-full"
                                                                 style={{
                                                                     background: `${zoneColor.color}/20`,
                                                                     color: zoneColor.color,

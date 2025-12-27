@@ -1,78 +1,65 @@
-import { Palette, Zap, Heart } from "lucide-react";
-
 export const zoneData = [
   {
-    id: "aurora",
-    name: "Zone Aurora",
-    tagline: "Creativity & Design",
+    id: "north",
+    name: "µgly",
+    tagline: "Mischief served daily",
     description:
-      "Unleash your artistic vision through design challenges, creative showcases, and visual storytelling events. Aurora is where imagination meets skill.",
-    icon: Palette,
-    gradient: "from-red-600 via-black-500 to-red-600",
+      "Unleash your artistic vision through design challenges, creative showcases, and visual storytelling events. north is where imagination meets skill.",
+    mascot: "/mascots/north.png",
+    gradient: "from-red-600 via-black to-red-600",
     color: "text-muted-foreground",
     bgColor: "bg-muted-foreground/10",
     borderColor: "border-muted/30",
-    events: 5,
-    participants: 450,
-    totalPoints: 2500,
   },
   {
-    id: "spark",
-    name: "Zone Spark",
-    tagline: "Technical & Innovation",
+    id: "central",
+    name: "Vasco De µsic",
+    tagline: "µsic with Body Muscles",
     description:
-      "Push the boundaries of technology with coding challenges, hackathons, and innovative problem-solving. Spark is where logic meets creativity.",
-    icon: Zap,
+      "Flex your muscles with creative electronics, coding, and AI storytelling. Festive spirit meets innovative logic to illµnate your journey.",
+    mascot: "/mascots/ponji.png",
     gradient: "from-amber-500 via-yellow-400 to-amber-500",
     color: "text-accent",
     bgColor: "bg-accent/10",
     borderColor: "border-accent/30",
-    events: 6,
-    participants: 520,
-    totalPoints: 3000,
   },
   {
-    id: "noel",
-    name: "Zone Noel",
-    tagline: "Fun, Community & Culture",
+    id: "south",
+    name: "μember",
+    tagline: "Certified hope dealer",
     description:
-      "Celebrate the festive spirit with cultural performances, community activities, and joyful gatherings. Noel is where hearts come together.",
-    icon: Heart,
+      "Celebrate the festive spirit with cultural performances, community activities, and joyful gatherings. south is where hearts come together.",
+    mascot: "/mascots/south.png",
     gradient: "from-emerald-500 via-green-400 to-emerald-500",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
     borderColor: "border-secondary/30",
-    events: 4,
-    participants: 380,
-    totalPoints: 2000,
   },
 ];
 
-export const zoneIcons = [
+export const zones = [
   {
-    id: "aurora",
-    name: "Zone Aurora",
-    icon: Palette,
-    color: "purple" as const,
+    id: "north",
+    name: "North Zone",
   },
-  { id: "spark", name: "Zone Spark", icon: Zap, color: "gold" as const },
-  { id: "noel", name: "Zone Noel", icon: Heart, color: "green" as const },
+  { id: "central", name: "Central Zone" },
+  { id: "south", name: "South Zone" },
 ];
 
 export const zoneStyles = {
-  aurora: {
+  north: {
     bgColor: "bg-purple-500/10",
     borderColor: "border-purple-500/30",
     color: "text-purple-400",
     glowColor: "purple" as const,
   },
-  spark: {
+  central: {
     bgColor: "bg-accent/10",
     borderColor: "border-accent/30",
     color: "text-accent",
     glowColor: "gold" as const,
   },
-  noel: {
+  south: {
     bgColor: "bg-secondary/10",
     borderColor: "border-secondary/30",
     color: "text-secondary",

@@ -71,7 +71,7 @@ export default function Hero() {
 
           <MotionDiv variants={fadeInUp}>
             <Link href="/zones">
-              <Button variant="default" className="px-4 py-2">
+              <Button variant="default">
                 <span className="relative z-10">Get Started</span>
               </Button>
             </Link>

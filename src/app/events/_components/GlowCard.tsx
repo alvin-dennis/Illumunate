@@ -16,7 +16,6 @@ const GlowCard = ({ children, className = '', glowColor = 'red' }: GlowCardProps
 
   return (
     <div className={`group relative ${className}`}>
-      {/* Animated border glow */}
       <div 
         className={`absolute -inset-0.5 rounded-2xl bg-gradient-to-r opacity-0 blur-sm transition-all duration-500 group-hover:opacity-100 ${glowStyles[glowColor]}`}
         style={{
@@ -29,7 +28,6 @@ const GlowCard = ({ children, className = '', glowColor = 'red' }: GlowCardProps
             : 'linear-gradient(90deg, transparent, hsl(280, 60%, 50%), transparent)',
         }}
       />
-      {/* Card content */}
       <div className="relative rounded-2xl bg-card/80 backdrop-blur-xl border border-border/50 transition-all duration-500 group-hover:border-border group-hover:bg-card/90">
         {children}
       </div>

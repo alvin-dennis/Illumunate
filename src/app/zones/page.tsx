@@ -1,30 +1,25 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
-import CountUp from "react-countup";
-import { zoneData } from "@/data/zones";
+import { zoneData, zones } from "@/data/zones";
 
 import { Button } from "@/components/ui/button";
-import {
-    ArrowRight,
-    Calendar,
-    Users,
-    Award,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Zones() {
     const searchParams = useSearchParams();
+    const router = useRouter();
     const zoneParam = searchParams.get("zone");
 
-    const [selectedZone, setSelectedZone] = useState(
-        zoneParam || "aurora"
-    );
-
     const activeZone =
-        zoneData.find((z) => z.id === selectedZone) || zoneData[0];
+        zoneData.find((z) => z.id === zoneParam) || zoneData[1];
+
+    const handleZoneChange = (zoneId: string) => {
+        router.replace(`/zones?zone=${zoneId}`);
+    };
 
     return (
         <div className="min-h-screen">
@@ -35,32 +30,26 @@ export default function Zones() {
                             Three Paths
                         </span>
                         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                            Explore{" "}
-                            <span className="text-primary">
-                                Zones
-                            </span>
+                            Explore <span className="text-primary">Zones</span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                            Three unique zones, each offering distinct challenges and
-                            experiences. Choose your path and begin your Illuµnate journey.
+                            Three unique zones, each offering distinct challenges and experiences. Choose your path and begin your Illuµnate journey.
                         </p>
                     </ScrollReveal>
 
                     <ScrollReveal delay={100} className="flex flex-wrap justify-center gap-3 mb-16">
-                        {zoneData.map((zone) => (
+                        {zones.map((zone) => (
                             <Button
                                 key={zone.id}
-                                variant={selectedZone === zone.id ? "default" : "ghost"}
-                                onClick={() => setSelectedZone(zone.id)}
-                                className="gap-2"
+                                variant={activeZone.id === zone.id ? "default" : "ghost"}
+                                onClick={() => handleZoneChange(zone.id)}
                             >
-                                <zone.icon className="w-5 h-5" />
                                 {zone.name}
                             </Button>
                         ))}
                     </ScrollReveal>
 
-                    <ScrollReveal delay={200} className="max-w-5xl mx-auto">
+                    <ScrollReveal delay={200} className="max-w-3xl mx-auto">
                         <div
                             className={`relative rounded-3xl p-8 md:p-12 border ${activeZone.borderColor} bg-card/30 backdrop-blur-sm`}
                         >
@@ -73,11 +62,13 @@ export default function Zones() {
 
                             <div className="relative z-10 flex flex-col md:flex-row gap-8">
                                 <div className="flex-1">
-                                    <div
-                                        className={`w-20 h-20 rounded-2xl ${activeZone.bgColor} flex items-center justify-center mb-6`}
-                                    >
-                                        <activeZone.icon
-                                            className={`w-10 h-10 ${activeZone.color}`}
+                                    <div className={`w-30 h-auto rounded-2xl ${activeZone.bgColor} flex items-center justify-center mb-6`}>
+                                        <Image
+                                            src={activeZone.mascot}
+                                            alt={`${activeZone.name} mascot`}
+                                            width={66}
+                                            height={70}
+                                            className="object-cover"
                                         />
                                     </div>
 
@@ -93,53 +84,10 @@ export default function Zones() {
 
                                     <Link href={`/events?zone=${activeZone.id}`}>
                                         <Button variant="default" className="group gap-2">
-                                            View All Events
+                                            View All Zone Events
                                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                         </Button>
                                     </Link>
-                                </div>
-
-                                <div className="md:w-72 space-y-4">
-                                    {[
-                                        {
-                                            label: "Total Events",
-                                            value: activeZone.events,
-                                            icon: Calendar,
-                                            duration: 1000,
-                                        },
-                                        {
-                                            label: "Participants",
-                                            value: activeZone.participants,
-                                            icon: Users,
-                                            duration: 1500,
-                                            suffix: "+",
-                                        },
-                                        {
-                                            label: "Total Points",
-                                            value: activeZone.totalPoints,
-                                            icon: Award,
-                                            duration: 2000,
-                                        },
-                                    ].map((stat) => (
-                                        <div
-                                            key={stat.label}
-                                            className={`p-6 rounded-2xl ${activeZone.bgColor} border ${activeZone.borderColor}`}
-                                        >
-                                            <div className="flex items-center gap-3 mb-2">
-                                                <stat.icon className={`w-5 h-5 ${activeZone.color}`} />
-                                                <span className="text-sm text-muted-foreground">
-                                                    {stat.label}
-                                                </span>
-                                            </div>
-                                            <div className="text-3xl font-bold">
-                                                <CountUp
-                                                    end={stat.value}
-                                                    duration={stat.duration}
-                                                    suffix={stat.suffix}
-                                                />
-                                            </div>
-                                        </div>
-                                    ))}
                                 </div>
                             </div>
                         </div>

@@ -3,20 +3,11 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import { zoneInfo } from '@/data/common';
+import { zoneData } from '@/data/zones';
 import { MotionDiv } from '@/components/Framer';
 
 export default function Zones(){
   const [hoveredZone, setHoveredZone] = useState<string | null>(null);
-
-  const getGlowColor = (color: string) => {
-    switch (color) {
-      case 'crimson': return 'hsl(350 75% 50%)';
-      case 'emerald': return 'hsl(160 70% 40%)';
-      case 'champagne': return 'hsl(40 80% 60%)';
-      default: return 'hsl(350 75% 50%)';
-    }
-  };
 
   return (
     <section className="relative py-40 overflow-hidden">
@@ -49,7 +40,7 @@ export default function Zones(){
           </MotionDiv>
 
           <div className="space-y-2">
-            {zoneInfo.map((zone, index) => (
+            {zoneData.map((zone, index) => (
               <MotionDiv
                 key={zone.id}
                 initial={{ opacity: 0, x: -40 }}
@@ -66,7 +57,7 @@ export default function Zones(){
                   >
                     <MotionDiv
                       className="absolute top-0 left-0 right-0 h-px"
-                      style={{ backgroundColor: getGlowColor(zone.color) }}
+                      style={{ backgroundColor: 'hsl(350 75% 50% / 1)' }}
                       initial={{ scaleX: 0, opacity: 0 }}
                       animate={{
                         scaleX: hoveredZone === zone.id ? 1 : 0,
@@ -85,7 +76,7 @@ export default function Zones(){
                             {zone.name}
                           </h3>
                           <p className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            {zone.subtitle}
+                            {zone.tagline}
                           </p>
                         </div>
                       </div>
@@ -93,8 +84,14 @@ export default function Zones(){
                       <MotionDiv
                         className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center"
                         animate={{
-                          borderColor: hoveredZone === zone.id ? getGlowColor(zone.color) : 'hsl(var(--border) / 0.5)',
-                          boxShadow: hoveredZone === zone.id ? `0 0 30px ${getGlowColor(zone.color)}40` : 'none',
+                          borderColor:
+                            hoveredZone === zone.id
+                              ? 'hsl(350 75% 50%)'
+                              : 'hsl(var(--border) / 0.5)',
+                          boxShadow:
+                            hoveredZone === zone.id
+                              ? '0 0 30px hsl(350 75% 50% / 0.25)'
+                              : 'none',
                         }}
                         transition={{ duration: 0.3 }}
                       >

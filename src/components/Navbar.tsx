@@ -83,7 +83,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.98 }}
           >
             <Link href="/zones">
-              <Button variant="default" className="px-5 py-2">
+              <Button variant="default">
                 Join
               </Button>
             </Link>
