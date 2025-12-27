@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
-import ScrollReveal from "@/components/ScrollReveal";
 import { zoneData, zones } from "@/data/zones";
 
 import { Button } from "@/components/ui/button";
@@ -25,7 +24,7 @@ export default function Zones() {
         <div className="min-h-screen">
             <main className="pt-32 pb-24">
                 <div className="container mx-auto px-4">
-                    <ScrollReveal className="text-center mb-16">
+                    <div className="text-center mb-16">
                         <span className="inline-block text-sm font-semibold uppercase tracking-widest mb-4">
                             Three Paths
                         </span>
@@ -35,9 +34,9 @@ export default function Zones() {
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                             Three unique zones, each offering distinct challenges and experiences. Choose your path and begin your Illuµnate journey.
                         </p>
-                    </ScrollReveal>
+                    </div>
 
-                    <ScrollReveal delay={100} className="flex flex-wrap justify-center gap-3 mb-16">
+                    <div className="flex flex-wrap justify-center gap-3 mb-16">
                         {zones.map((zone) => (
                             <Button
                                 key={zone.id}
@@ -47,9 +46,9 @@ export default function Zones() {
                                 {zone.name}
                             </Button>
                         ))}
-                    </ScrollReveal>
+                    </div>
 
-                    <ScrollReveal delay={200} className="max-w-3xl mx-auto">
+                    <div className="max-w-3xl mx-auto">
                         <div
                             className={`relative rounded-3xl p-8 md:p-12 border ${activeZone.borderColor} bg-card/30 backdrop-blur-sm`}
                         >
@@ -91,7 +90,7 @@ export default function Zones() {
                                 </div>
                             </div>
                         </div>
-                    </ScrollReveal>
+                    </div>
                 </div>
             </main>
         </div>

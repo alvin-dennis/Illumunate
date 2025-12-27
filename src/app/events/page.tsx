@@ -8,7 +8,6 @@ import {
     ArrowRight,
     Calendar,
 } from "lucide-react";
-import ScrollReveal from "@/components/ScrollReveal";
 import { zonalEvents } from "@/data/events";
 import { zoneStyles, zones } from "@/data/zones";
 
@@ -42,7 +41,7 @@ export default function Events() {
         <div className="min-h-screen">
             <main className="pt-32 pb-24">
                 <div className="container mx-auto px-4">
-                    <ScrollReveal className="text-center mb-16">
+                    <div className="text-center mb-16">
                         <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
                             Participate & Win
                         </span>
@@ -53,9 +52,9 @@ export default function Events() {
                             Explore events across all three zones. Each event offers unique
                             challenges and rewards.
                         </p>
-                    </ScrollReveal>
+                    </div>
 
-                    <ScrollReveal delay={100} className="flex flex-wrap justify-center gap-3 mb-12">
+                    <div className="flex flex-wrap justify-center gap-3 mb-12">
                         {zones.map((zone) => (
                             <Button
                                 key={zone.id}
@@ -66,11 +65,11 @@ export default function Events() {
                                 {zone.name}
                             </Button>
                         ))}
-                    </ScrollReveal>
+                    </div>
 
                     <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                         {zonalEvents[activeZone].map((event, index) => (
-                            <ScrollReveal key={event.id} delay={index * 100}>
+                            <div key={event.id}>
                                 <MotionDiv
                                     className={`group relative bg-mulearn-whitish rounded-2xl overflow-hidden
                     shadow-sm hover:shadow-xl transition-all duration-300
@@ -158,7 +157,7 @@ export default function Events() {
                                         </div>
                                     </div>
                                 </MotionDiv>
-                            </ScrollReveal>
+                            </div>
                         ))}
                     </div>
                 </div>

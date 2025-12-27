@@ -4,8 +4,8 @@ export const zoneData = [
     name: "µgly",
     tagline: "Mischief served daily",
     description:
-      "Unleash your artistic vision through design challenges, creative showcases, and visual storytelling events. north is where imagination meets skill.",
-    mascot: "/mascots/north.png",
+      "Discover playful challenges and curiosity-driven learning where rules bend, creativity leads, and skills grow through joyful experimentation.",
+    mascot: "/mascots/mugly.png",
     gradient: "from-red-600 via-black to-red-600",
     color: "text-muted-foreground",
     bgColor: "bg-muted-foreground/10",

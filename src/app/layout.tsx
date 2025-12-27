@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
-import Background from "@/components/Background";
+import Background from "@/components/ui/background";
 
 
 export const metadata: Metadata = {

@@ -5,11 +5,11 @@ import CTA from '@/app/(home)/_components/CTA';
 
 export default function Home() {
   return (
-      <div className="min-h-screen">
-          <Hero />
-          <Concept />
-          <Zones />
-          <CTA />
-      </div>
+    <div className="min-h-screen">
+      <Hero />
+      <Concept />
+      <Zones />
+      <CTA />
+    </div>
   );
 };
