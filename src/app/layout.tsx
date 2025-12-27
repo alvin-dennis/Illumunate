@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Suspense } from "react";
 import "./globals.css";
-import Providers from "@/app/providers";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
@@ -10,27 +9,27 @@ import Background from "@/components/Background";
 
 
 export const metadata: Metadata = {
-  title: "Illuµnate — µLearn Christmas Festival",
+  title: "Illuµnate — µLearn",
   description:
     "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
   authors: [{ name: "µLearn", url: "https://illumunate.mulearn.org/" }],
   openGraph: {
-    title: "Illuµnate — µLearn Christmas Festival",
+    title: "Illuµnate — µLearn",
     description:
       "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
-    siteName: "Illuµnate — µLearn Christmas Festival",
+    siteName: "Illuµnate — µLearn",
     url: "https://illumunate.mulearn.org/",
     type: "website",
     images: [
       {
         url: "/logo.svg",
-        alt: "Illuµnate Christmas Festival",
+        alt: "Illuµnate — µLearn",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Illuµnate — µLearn Christmas Festival",
+    title: "Illuµnate — µLearn",
     description:
       "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
     images: ["/logo.svg"],
@@ -69,9 +68,7 @@ export default function RootLayout({
         </div>
         <Navbar />
         <Suspense fallback={<Loader />}>
-          <Providers>
             {children}
-          </Providers>
         </Suspense>
         <Footer />
       </body>

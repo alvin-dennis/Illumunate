@@ -32,7 +32,7 @@ export default function Zones(){
                   Three Paths
                 </span>
               </div>
-              <h2 className="text-5xl md:text-7xl text-primary">ZONES</h2>
+              <h2 className="text-5xl md:text-7xl text-primary uppercase">Zones</h2>
               <p className="text-sm mt-2">
                 Each zone is a unique dimension of creative expression.
               </p>

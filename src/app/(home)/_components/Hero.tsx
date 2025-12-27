@@ -1,9 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { Variants } from "framer-motion";
 import { MotionDiv, MotionP } from "@/components/Framer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { stats } from "@/data/common";
+import CountUp from "react-countup";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -80,8 +83,19 @@ export default function Hero() {
           <MotionDiv variants={fadeInUp} className="mt-10 flex justify-center gap-16 md:gap-24">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="font-bold text-primary text-4xl md:text-5xl mb-2">{stat.value}</div>
-                <div className="text-xs tracking-[0.2em] uppercase text-muted-foreground">{stat.label}</div>
+                <div className="font-bold text-primary text-4xl md:text-5xl mb-2">
+                  <CountUp
+                    end={stat.value}
+                    suffix={stat.suffix || ""}
+                    duration={7}
+                    separator=","
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                </div>
+                <div className="text-xs tracking-[0.2em] uppercase text-muted-foreground">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </MotionDiv>

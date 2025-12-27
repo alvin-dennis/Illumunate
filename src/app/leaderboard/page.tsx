@@ -1,13 +1,15 @@
 "use client";
-import { useState } from 'react';
+
+import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Trophy, Medal, Award, GraduationCap, User, Sparkles } from 'lucide-react';
-import { collegeLeaderboard, studentLeaderboard } from '@/data/leaderboard';
+import { zonalLeaderboard, studentLeaderboard } from '@/data/leaderboard';
 import CountUp from 'react-countup';
 import { MotionDiv, MotionH1, MotionP } from '@/components/Framer';
 import { Button } from '@/components/ui/button';
+import Loader from '@/components/Loader';
 
-const maxPoints = Math.max(...collegeLeaderboard.map(c => c.points));
+const maxPoints = Math.max(...zonalLeaderboard.map(c => c.points));
 const maxStudentPoints = Math.max(...studentLeaderboard.map(s => s.points));
 
 const getZoneColor = (zone: string) => {
@@ -49,9 +51,17 @@ const getRankGlow = (rank: number) => {
 };
 
 const Results = () => {
-    const [activeTab, setActiveTab] = useState<'colleges' | 'students'>('colleges');
+    const [activeTab, setActiveTab] = useState<'zonal' | 'students'>('zonal');
     const [hoveredRank, setHoveredRank] = useState<number | null>(null);
+    const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
     return (
         <div className="min-h-screen">
             <main className="pt-32 pb-24 relative z-10">
@@ -74,12 +84,12 @@ const Results = () => {
                         </MotionDiv>
 
                         <MotionH1
-                            className="text-6xl md:text-8xl lg:text-9xl mb-6"
+                            className="text-5xl md:text-7xl lg:text-8xl mb-6"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            <span className="text-primary">LEADERBOARD</span>
+                            <span className="text-primary uppercase">Leaderboard</span>
                         </MotionH1>
 
                         <MotionP
@@ -98,23 +108,23 @@ const Results = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        {['colleges', 'students'].map((tab) => (
+                        {['zonal', 'students'].map((tab) => (
                             <Button
                                 key={tab}
                                 variant={activeTab === tab ? "default" : "ghost"}
-                                onClick={() => setActiveTab(tab as "colleges" | "students")}
+                                onClick={() => setActiveTab(tab as "zonal" | "students")}
                                 className={`relative text-lg uppercase transition-all duration-300 ${activeTab === tab
                                     ? "text-foreground"
                                     : "text-muted-foreground hover:text-foreground"
                                     }`}
                             >
                                 <span className="relative z-10 flex items-center gap-3">
-                                    {tab === "colleges" ? (
+                                    {tab === "zonal" ? (
                                         <GraduationCap className="w-5 h-5" />
                                     ) : (
                                         <User className="w-5 h-5" />
                                     )}
-                                    {tab === "colleges" ? "Colleges" : "Students"}
+                                    {tab === "zonal" ? "zonal" : "Students"}
                                 </span>
 
                                 {activeTab === tab && (
@@ -133,16 +143,18 @@ const Results = () => {
                     </MotionDiv>
                     <div className="max-w-5xl mx-auto">
                         <AnimatePresence mode="wait">
-                            {activeTab === 'colleges' ? (
+                            {loading ? (
+                                    <Loader />
+                            ) : activeTab === "zonal" ? (
                                 <MotionDiv
-                                    key="colleges"
+                                    key="zonal"
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: 20 }}
                                     transition={{ duration: 0.3 }}
                                     className="space-y-4"
                                 >
-                                    {collegeLeaderboard.map((college, index) => {
+                                    {zonalLeaderboard.map((college, index) => {
                                         const rankStyle = getRankGlow(college.rank);
                                         const zoneColor = getZoneColor(college.zone);
                                         const barWidth = (college.points / maxPoints) * 100;
@@ -339,7 +351,7 @@ const Results = () => {
                             )}
                         </AnimatePresence>
 
-                        {((activeTab === 'colleges' && collegeLeaderboard.length === 0) ||
+                        {((activeTab === 'zonal' && zonalLeaderboard.length === 0) ||
                             (activeTab === 'students' && studentLeaderboard.length === 0)) && (
                                 <MotionDiv
                                     initial={{ opacity: 0 }}

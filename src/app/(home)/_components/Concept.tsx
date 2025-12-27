@@ -17,9 +17,9 @@ export default function Concept() {
                 The Concept
               </span>
             </div>
-            <h2 className="text-5xl md:text-7xl lg:text-8xl leading-[0.9]">
-              CHRISTMAS<br />
-              <span className="text-primary">REIMAGINED</span>
+            <h2 className="text-5xl md:text-7xl lg:text-8xl leading-[0.9] uppercase">
+              Christmas<br />
+              <span className="text-primary">Reimagined</span>
             </h2>
           </MotionDiv>
           <div className="grid md:grid-cols-3 gap-12 md:gap-8">

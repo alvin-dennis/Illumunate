@@ -1,13 +1,15 @@
+import { Stat } from "@/lib/types";
+
 export const navLinks = [
   { name: "Zones", path: "/zones" },
   { name: "Events", path: "/events" },
   { name: "Leaderboard", path: "/leaderboard" },
 ];
 
-export const stats = [
-  { value: "3", label: "Zones" },
-  { value: "30+", label: "Events" },
-  { value: "20+", label: "Colleges" },
+export const stats:Stat[] = [
+  { value: 3, label: "Zones" },
+  { value: 30, label: "Events", suffix: "+" },
+  { value: 20, label: "Colleges", suffix: "+" },
 ];
 
 export const concepts = [

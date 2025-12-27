@@ -32,7 +32,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row gap-8 md:gap-16">
               <div>
                 <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground  block mb-4">
-                  Navigate
+                  Quick Links
                 </span>
                 <div className="flex flex-col gap-3">
                   {links.map((link) => (
