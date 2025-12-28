@@ -29,7 +29,7 @@ export const zoneData = [
     tagline: "Certified hope dealer",
     description:
       "Celebrate the festive spirit with cultural performances, community activities, and joyful gatherings. south is where hearts come together.",
-    mascot: "/mascots/south.png",
+    mascot: "/mascots/emby.png",
     gradient: "from-emerald-500 via-green-400 to-emerald-500",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
