@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   compress: true,
-  reactStrictMode: true,
-  trailingSlash: false
+  reactStrictMode: true
 };
 
 export default nextConfig;
