@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     return Object.entries(REDIRECTS).map(([slug, url]) => ({
       source: `/r/${slug}`,
       destination: url,
-      permanent: true,
+      permanent: false,
     }));
   },
 };
