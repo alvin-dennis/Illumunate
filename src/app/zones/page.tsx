@@ -63,11 +63,12 @@ export default function Zones() {
                                 <div className="flex-1">
                                     <div className={`w-30 h-auto rounded-2xl ${activeZone.bgColor} flex items-center justify-center mb-6`}>
                                         <Image
+                                            key={activeZone.id}
                                             src={activeZone.mascot}
                                             alt={`${activeZone.name} mascot`}
                                             width={66}
                                             height={70}
-                                            className="object-cover"
+                                            className="object-cover transition-opacity duration-300"
                                         />
                                     </div>
 
