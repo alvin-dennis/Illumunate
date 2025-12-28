@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return Object.entries(REDIRECTS).map(([slug, url]) => ({
-      source: `/r/${slug}`,
+      source: `/e/${slug}`,
       destination: url,
       permanent: false,
     }));
