@@ -1,35 +1,10 @@
-export const REDIRECTS: Record<string, string> = {
-  "merry-craft": "https://mulearn.org",
-  "reeling-in-the-holidays": "https://mulearn.org",
-  "santas-sledge": "https://mulearn.org",
-  "roblox-game-dev": "https://mulearn.org",
-  snowverse: "https://mulearn.org",
-  "x-snap": "https://mulearn.org",
-  "murry-quizmas": "https://mulearn.org",
-  muwishes: "https://mulearn.org",
-  "malabar-santa": "https://mulearn.org",
+import { zonalEvents } from "./events";
 
-  "twinkling-tunes": "https://mulearn.org",
-  "code-a-snowman": "https://mulearn.org",
-  "mu-me": "https://mulearn.org",
-  "word-of-the-year": "https://mulearn.org",
-  "treasure-hunt": "https://mulearn.org",
-  "santas-vlog": "https://mulearn.org",
-  debate: "https://mulearn.org",
-  "think-ovation": "https://mulearn.org",
-  "santas-portfolio": "https://mulearn.org",
-  "code-of-eve": "https://mulearn.org",
-
-  "mu-santa": "https://mulearn.org",
-  "mu-sketch": "https://mulearn.org",
-  santacraft: "https://mulearn.org",
-  ctf: "https://mulearn.org",
-  "santas-blog": "https://mulearn.org",
-  "santas-startup-pitch": "https://mulearn.org",
-  "meme-x": "https://mulearn.org",
-  "santa-hiring-vibathon": "https://mulearn.org",
-  "music-event": "https://mulearn.org",
-  "who-is-santa": "https://mulearn.org",
-  "prompt-a-palooza": "https://mulearn.org",
-  "christmas-courtroom": "https://mulearn.org",
-};
+export const REDIRECTS: Record<string, string> = Object.values(zonalEvents)
+  .flat()
+  .reduce<Record<string, string>>((acc, event) => {
+    if (event.shortname && event.link) {
+      acc[event.shortname] = event.link;
+    }
+    return acc;
+  }, {});

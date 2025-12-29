@@ -8,8 +8,7 @@ export type Event = {
   id: number;
   name: string;
   description: string;
-  deadline: string;
-  poster: string | null;
+  poster: string;
   link: string;
   shortname: string;
 };

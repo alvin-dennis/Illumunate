@@ -2,11 +2,7 @@
 
 import { useSearchParams, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import {
-    Clock,
-    ArrowRight,
-    Calendar,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { toast } from "sonner"
 import { zonalEvents } from "@/data/events";
 import { zoneStyles, zones } from "@/data/zones";
@@ -98,17 +94,12 @@ export default function Events() {
                                                 </h3>
                                             </div>
 
-                                            <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
+                                            <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line line-clamp-2">
                                                 {event.description}
                                             </p>
                                         </div>
 
                                         <div className="mt-4 flex items-center justify-between">
-                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <Clock className="w-4 h-4" />
-                                                Deadline: {event.deadline}
-                                            </div>
-
                                             <Dialog>
                                                 <DialogTrigger asChild>
                                                     <Button size="sm" className="gap-2">
@@ -123,15 +114,12 @@ export default function Events() {
                                                             <DialogTitle className="text-xl">
                                                                 {event.name}
                                                             </DialogTitle>
-                                                            <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
-                                                                <Calendar className="w-4 h-4" />
-                                                                Deadline: {event.deadline}
-                                                            </div>
                                                         </DialogHeader>
 
-                                                        <DialogDescription className="mt-4 text-sm leading-relaxed">
+                                                        <DialogDescription className="mt-4 text-sm leading-relaxed whitespace-pre-line max-h-[60vh] overflow-y-auto pr-2">
                                                             {event.description}
                                                         </DialogDescription>
+
 
                                                         {event.link && (
                                                             <Button asChild className="w-full mt-6 gap-2">
@@ -155,7 +143,7 @@ export default function Events() {
                                                                     className="flex-1 gap-2"
                                                                     variant="outline"
                                                                 >
-                                                                    Copy Registration Link
+                                                                    Copy Registration/Submission Link
                                                                 </Button>
 
                                                                 <Button
