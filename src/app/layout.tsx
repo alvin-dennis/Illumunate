@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 import Background from "@/components/ui/background";
+import { Toaster } from "sonner";
 
 
 export const metadata: Metadata = {
@@ -68,6 +69,7 @@ export default function RootLayout({
         </div>
         <Navbar />
         <Suspense fallback={<Loader />}>
+          <Toaster position="top-center" richColors expand={false} theme="dark" />
             {children}
         </Suspense>
         <Footer />

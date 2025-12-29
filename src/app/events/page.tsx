@@ -3,11 +3,11 @@
 import { useSearchParams, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
-    Award,
     Clock,
     ArrowRight,
     Calendar,
 } from "lucide-react";
+import { toast } from "sonner"
 import { zonalEvents } from "@/data/events";
 import { zoneStyles, zones } from "@/data/zones";
 
@@ -67,7 +67,7 @@ export default function Events() {
                         ))}
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         {zonalEvents[activeZone].map((event, index) => (
                             <div key={event.id}>
                                 <MotionDiv
@@ -96,15 +96,9 @@ export default function Events() {
                                                 <h3 className="text-xl font-bold text-foreground pr-4">
                                                     {event.name}
                                                 </h3>
-                                                <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-accent/10 border border-accent/20">
-                                                    <Award className="w-4 h-4 text-accent" />
-                                                    <span className="text-sm font-bold text-accent">
-                                                        {event.points} pts
-                                                    </span>
-                                                </div>
                                             </div>
 
-                                            <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+                                            <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
                                                 {event.description}
                                             </p>
                                         </div>
@@ -151,6 +145,37 @@ export default function Events() {
                                                                 </Link>
                                                             </Button>
                                                         )}
+                                                        {event.shortname && (
+                                                            <div className="flex flex-col sm:flex-row gap-2 mt-4">
+                                                                <Button
+                                                                    onClick={() => {
+                                                                        navigator.clipboard.writeText(`https://illumunate.mulearn.org/r/${event.shortname}`);
+                                                                        toast.success("Link copied to clipboard!");
+                                                                    }}
+                                                                    className="flex-1 gap-2"
+                                                                    variant="outline"
+                                                                >
+                                                                    Copy Link
+                                                                </Button>
+
+                                                                <Button
+                                                                    asChild
+                                                                    className="flex-1 gap-2"
+                                                                    variant="outline"
+                                                                >
+                                                                    <Link
+                                                                        href={`https://wa.me/?text=${encodeURIComponent(
+                                                                            `Check out this event: ${event.name} https://illumunate.mulearn.org/r/${event.shortname}`
+                                                                        )}`}
+                                                                        target="_blank"
+                                                                        rel="noopener noreferrer"
+                                                                    >
+                                                                        WhatsApp
+                                                                    </Link>
+                                                                </Button>
+                                                            </div>
+                                                        )}
+
                                                     </div>
                                                 </DialogContent>
                                             </Dialog>

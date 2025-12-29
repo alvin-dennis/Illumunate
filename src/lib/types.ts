@@ -8,17 +8,20 @@ export type Event = {
   id: number;
   name: string;
   description: string;
-  fullDescription: string;
-  points: number;
   deadline: string;
-  poster: string;
+  poster: string | null;
   link: string;
+  shortname: string;
 };
+
+export type Zone = "north" | "central" | "south";
+
+export type ZonalEvents = Record<Zone, Event[]>;
 
 export type Leaderboard = {
   rank: number;
   name: string;
   college: string;
   zone: "north" | "central" | "south";
-  points: number;
+  tier: number;
 };
