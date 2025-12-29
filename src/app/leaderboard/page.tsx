@@ -9,8 +9,8 @@ import { MotionDiv, MotionH1, MotionP } from '@/components/Framer';
 import { Button } from '@/components/ui/button';
 import Loader from '@/components/Loader';
 
-const maxPoints = Math.max(...zonalLeaderboard.map(c => c.points));
-const maxStudentPoints = Math.max(...studentLeaderboard.map(s => s.points));
+// const maxPoints = Math.max(...zonalLeaderboard.map(c => c.points));
+// const maxStudentPoints = Math.max(...studentLeaderboard.map(s => s.points));
 
 const getZoneColor = (zone: string) => {
     switch (zone) {
@@ -142,7 +142,7 @@ const Results = () => {
                         ))}
                     </MotionDiv>
                     <div className="max-w-5xl mx-auto">
-                        <AnimatePresence mode="wait">
+                        {/* <AnimatePresence mode="wait">
                             {loading ? (
                                     <Loader />
                             ) : activeTab === "zonal" ? (
@@ -349,18 +349,30 @@ const Results = () => {
                                     })}
                                 </MotionDiv>
                             )}
-                        </AnimatePresence>
+                        </AnimatePresence> */}
 
                         {((activeTab === 'zonal' && zonalLeaderboard.length === 0) ||
                             (activeTab === 'students' && studentLeaderboard.length === 0)) && (
-                                <MotionDiv
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    className="text-center py-20"
-                                >
-                                    <Sparkles className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                                    <p className="text-muted-foreground ">No results found</p>
-                                </MotionDiv>
+                            <MotionDiv
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                className="text-center py-20"
+                            >
+                                <Sparkles className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+
+                                <h3 className="text-lg font-semibold mb-2">
+                                    Leaderboard coming soon 🚀
+                                </h3>
+
+                                <p className="text-muted-foreground mb-2">
+                                    No rankings available at the moment.
+                                </p>
+
+                                <p className="text-sm text-muted-foreground">
+                                    Scores are being updated — check back later to see who’s on top.
+                                </p>
+                            </MotionDiv>
+
                             )}
                     </div>
                 </div>
