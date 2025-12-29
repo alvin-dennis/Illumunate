@@ -68,7 +68,7 @@ export default function Events() {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                        {zonalEvents[activeZone].map((event, index) => (
+                        {zonalEvents[activeZone].map((event) => (
                             <div key={event.id}>
                                 <MotionDiv
                                     className={`group relative bg-mulearn-whitish rounded-2xl overflow-hidden
@@ -140,13 +140,13 @@ export default function Events() {
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                 >
-                                                                    Participate Now
+                                                                    Register Now
                                                                     <ArrowRight className="w-4 h-4" />
                                                                 </Link>
                                                             </Button>
                                                         )}
                                                         {event.shortname && (
-                                                            <div className="flex flex-col sm:flex-row gap-2 mt-4">
+                                                            <div className="flex flex-col sm:flex-row gap-2 mt-2">
                                                                 <Button
                                                                     onClick={() => {
                                                                         navigator.clipboard.writeText(`https://illumunate.mulearn.org/r/${event.shortname}`);
@@ -155,7 +155,7 @@ export default function Events() {
                                                                     className="flex-1 gap-2"
                                                                     variant="outline"
                                                                 >
-                                                                    Copy Link
+                                                                    Copy Registration Link
                                                                 </Button>
 
                                                                 <Button
@@ -170,7 +170,7 @@ export default function Events() {
                                                                         target="_blank"
                                                                         rel="noopener noreferrer"
                                                                     >
-                                                                        WhatsApp
+                                                                        Share via WhatsApp
                                                                     </Link>
                                                                 </Button>
                                                             </div>
