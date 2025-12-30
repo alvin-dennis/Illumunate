@@ -101,9 +101,23 @@ export const northEvents: ZonalEvents["north"] = [
     id: 8,
     name: "µWishes",
     shortname: "muwishes",
-    description: "Redesign a Christmas-themed app interface.",
-    poster: null,
-    link: null,
+    description: `
+Turn festive cheer into beautiful web experiences! µWishes invites participants to design a personalized Christmas wishes website where users can create and share custom greetings, heartfelt messages, and joyful festive visuals. Blend creativity with coding and build a website that truly spreads the magic of Christmas! 📈
+
+📜 Guidelines:
+✅ A fully functional website must be submitted
+✅ Design and content must be completely original
+✅ Strict Christmas theme is mandatory
+✅ Only one submission is allowed per participant/team
+
+👉 Submit Here:
+🗓 Deadline: 15 January 2026
+
+🎉 Rewards:
+📢 Winning websites will be featured on social media pages
+⭐ Karma points for participants and winners`,
+    poster: "/events/north/muwishes.webp",
+    link: "https://tinyurl.com/Muwishes",
   },
   {
     id: 9,
