@@ -128,7 +128,7 @@ export default function Events() {
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                 >
-                                                                    Register Now
+                                                                    Register/Submit your work
                                                                     <ArrowRight className="w-4 h-4" />
                                                                 </Link>
                                                             </Button>

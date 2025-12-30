@@ -398,7 +398,7 @@ Minimal, playful, or warm—your design should feel intentional and user-first.`
       name: "SantaCraft",
       shortname: "santacraft",
       description: "Transform spaces with festive decorations.",
-      poster: "/events/south/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
