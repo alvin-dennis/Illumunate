@@ -7,7 +7,7 @@ export const zonalEvents: ZonalEvents = {
       name: "Merry Craft",
       shortname: "merry-craft",
       description: "Create stunning visual designs in a timed competition.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -38,7 +38,7 @@ export const zonalEvents: ZonalEvents = {
       name: "Santa’s Sledge",
       shortname: "santas-sledge",
       description: "Design a logo that captures the spirit of Illuµnate.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -46,7 +46,7 @@ export const zonalEvents: ZonalEvents = {
       name: "Roblox Game Dev",
       shortname: "roblox-game-dev",
       description: "Redesign a Christmas-themed app interface.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -54,7 +54,7 @@ export const zonalEvents: ZonalEvents = {
       name: "µSnowVerse",
       shortname: "snowverse",
       description: "Redesign a Christmas-themed app interface.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -103,7 +103,7 @@ export const zonalEvents: ZonalEvents = {
       name: "µWishes",
       shortname: "muwishes",
       description: "Redesign a Christmas-themed app interface.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -111,7 +111,7 @@ export const zonalEvents: ZonalEvents = {
       name: "Malabar Santa",
       shortname: "malabar-santa",
       description: "Redesign a Christmas-themed app interface.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
   ],
@@ -234,7 +234,7 @@ One word. Infinite meaning. Make it count ! 💫`,
       name: "Treasure Hunt",
       shortname: "treasure-hunt",
       description: "Create a festive web application from scratch.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -357,7 +357,7 @@ Code it. Design it. Make it magical! ✨🖥️`,
       name: "Code of Eve - Discord Bot Competition",
       shortname: "code-of-eve",
       description: "Create a festive web application from scratch.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
   ],
@@ -368,7 +368,7 @@ Code it. Design it. Make it magical! ✨🖥️`,
       name: "μSanta",
       shortname: "mu-santa",
       description: "Perform your best Christmas carols and win hearts.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -469,7 +469,7 @@ This is where understanding leaves a trace.
       name: "Santa’s Blog",
       shortname: "santas-blog",
       description: "Participate in community gift-giving initiatives.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -477,7 +477,7 @@ This is where understanding leaves a trace.
       name: "Santas Startup Pitch",
       shortname: "santas-startup-pitch",
       description: "Participate in community gift-giving initiatives.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -506,7 +506,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
       name: "Santa Hiring Vibathon",
       shortname: "santa-hiring-vibathon",
       description: "Participate in community gift-giving initiatives.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -514,7 +514,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
       name: "Music Event — μember",
       shortname: "music-event",
       description: "Participate in community gift-giving initiatives.",
-      poster: "/events/",
+      poster: null,
       link: "https://forms.gle/decoration-signup",
     },
     {
@@ -561,9 +561,29 @@ Step in, experiment, and surprise yourself. ✨
       id: 31,
       name: "Christmas Courtroom",
       shortname: "christmas-courtroom",
-      description: "Participate in community gift-giving initiatives.",
-      poster: "/events/",
-      link: "https://forms.gle/decoration-signup",
+      description: `
+Santa Claus’s sleigh has been stolen, throwing the North Pole into chaos. With conflicting statements and hidden clues, the truth is anything but obvious.
+
+Christmas Courtroom is an online mock courtroom event where teams analyse case files, examine evidence, and uncover what really happened.
+
+🔍 Event Details
+👥 Team size: 3–4 members
+💻 Mode: Online
+⏲️ Duration: 4 days
+📅 Starts: 1st January
+
+Open for people with a strong sense of:👀 
+Strong speakers
+Critical thinkers
+Problem solvers
+
+People who enjoy analysing situations and questioning narratives
+
+🎁 Rewards: Exciting µLearn goodies
+
+🎄 Will justice be served?`,
+      poster: "/events/south/christmascourtroom.webp",
+      link: "https://makemypass.com/event/christmas-courtroom",
     },
   ],
 };

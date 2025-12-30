@@ -8,7 +8,7 @@ export type Event = {
   id: number;
   name: string;
   description: string;
-  poster: string;
+  poster: string | null;
   link: string;
   shortname: string;
 };
