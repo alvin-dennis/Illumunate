@@ -4,7 +4,9 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { toast } from "sonner"
-import { zonalEvents } from "@/data/events";
+import { northEvents } from "@/data/events/north";
+import { centralEvents } from "@/data/events/central";
+import { southEvents } from "@/data/events/south";
 import { zoneStyles, zones } from "@/data/zones";
 
 import {
@@ -26,6 +28,13 @@ export default function Events() {
 
     const activeZone =
         (searchParams.get("zone") as "north" | "central" | "south") || "central";
+    
+    const zonalEvents = {
+        north: northEvents,
+        central: centralEvents,
+        south: southEvents,
+    } as const;
+
     const activeStyles = zoneStyles[activeZone];
 
     const handleZoneChange = (value: string) => {

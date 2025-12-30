@@ -1,0 +1,226 @@
+import { ZonalEvents } from "@/lib/types";
+
+export const southEvents: ZonalEvents["south"] = [
+  {
+    id: 20,
+    name: "μSanta",
+    shortname: "mu-santa",
+    description: "Perform your best Christmas carols and win hearts.",
+    poster: null,
+    link: "null",
+  },
+  {
+    id: 21,
+    name: "μSketch",
+    shortname: "mu-sketch",
+    description: `What if Christmas met design thinking?
+μSketch invites designers to redesign the MuLearn landing page with a Christmas theme—without compromising usability or brand identity.
+
+This is not about adding random snowflakes 
+It’s about creating a festive, functional, and thoughtful UI grounded in real UX principles.
+
+🛠 Tools: Figma / Canva / Framer
+🎯 Focus: Structure • Hierarchy • Usability • Festive Feel
+
+📅 Online Event
+📝 Registration: 28–30 Dec 2025
+🚀 Event Starts: 30 Dec 2025
+📤 Submission Deadline: 02 Jan 2026 (12 AM)
+
+Minimal, playful, or warm—your design should feel intentional and user-first.`,
+    poster: "/events/south/musketch.webp",
+    link: "https://forms.gle/ikuiJ6hKaKBWrQ5c8",
+  },
+  {
+    id: 22,
+    name: "SantaCraft",
+    shortname: "santacraft",
+    description: "Transform spaces with festive decorations.",
+    poster: null,
+    link: "null",
+  },
+  {
+    id: 23,
+    name: "CTF",
+    shortname: "ctf",
+    description: `A 6-hour online cybersecurity contest where insight matters more than speed and precision outweighs guesswork.
+Hosted by Rajadhani Institute of Engineering and Technology (RIET) on CTFd.
+
+🧠 WHAT MAKES THIS DIFFERENT 
+This is not a hunt for shortcuts.
+CTF Illuminate rewards structured thinking, disciplined analysis, and clean execution under pressure.
+
+🧩 PROBLEM DOMAINS 
+Each challenge reveals a different security layer:
+•🌐 Web 
+* 🕵️ OSINT 
+* 🔁 Reverse Engineering
+•🖼️ Steganography
+* 🔐 Cryptography
+•🧪 Digital Forensics 
+* 🤖 Android Security
+
+👥 PARTICIPATION FORMAT 
+Compete solo or as a two-member unit
+One identity. One team. No overlaps.
+Fully online. Fully skill-driven.
+
+🏁 HOW YOU SCORE 
+Fixed points per challenge
+Select problems reward early precision
+Rankings prioritize score first, time second
+
+📜 Verified participation certificates included
+
+🚩 FLAG STANDARD 
+Only submissions matching the format below are accepted:
+mulearn_riet{...}
+
+⚠️ PLAY BOUNDARIES 
+🌐 Open internet and technical tools (including AI) are permitted
+🚫 Collaboration outside your team is forbidden
+🚫 Flag exchange or solution leakage results in removal
+🛑 Platform abuse or system interference leads to instant disqualification
+🔍 Proof may be requested for irregular solves
+📌 Organizer decisions are final
+
+📅 EVENT WINDOW 
+Mode: 100% Online (CTFd Platform)
+
+​Duration: 6-Hour Intensive
+
+​Event Date: January 2, 2026
+
+​🔗 JOIN THE HUNT
+​Registration Opens: December 28, 2025
+​Registration Closes: December 31, 2025
+
+
+✨This is not a guessing game.
+This is where understanding leaves a trace.
+ CTF Illuminate — read between the layers.`,
+    poster: "/events/south/ctf.webp",
+    link: "http://makemypass.com/event/ctf-illu-nate",
+  },
+  {
+    id: 24,
+    name: "Santa’s Blog",
+    shortname: "santas-blog",
+    description: "Participate in community gift-giving initiatives.",
+    poster: null,
+    link: "null",
+  },
+  {
+    id: 25,
+    name: "Santas Startup Pitch",
+    shortname: "santas-startup-pitch",
+    description: "Participate in community gift-giving initiatives.",
+    poster: null,
+    link: "null",
+  },
+  {
+    id: 26,
+    name: "Meme-X",
+    shortname: "meme-x",
+    description: `What happens when Christmas meets humor?🤔 
+
+Meme-X is your chance to blend festive vibes, creativity, and pure relatability into memes that capture the joy of the season.
+This isn’t just about jokes.
+It’s about timing, creativity, and making people smile~one meme at a time...
+
+🎭 Theme: Christmas & Festive Moments
+🖼️ Formats : Image & Video 
+👤 Participation : Single
+🌐 Mode : Online
+📅 Duration :Dec 28 - Jan 2
+🏆 Judging Criteria: Creativity
+
+Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the festive spirit and stand out!`,
+    poster: "/events/south/memex.webp",
+    link: "https://tinyurl.com/MEME-88",
+  },
+  {
+    id: 27,
+    name: "Santa Hiring Vibathon",
+    shortname: "santa-hiring-vibathon",
+    description: "Participate in community gift-giving initiatives.",
+    poster: null,
+    link: "null",
+  },
+  {
+    id: 28,
+    name: "Music Event — μember",
+    shortname: "music-event",
+    description: "Participate in community gift-giving initiatives.",
+    poster: null,
+    link: "null",
+  },
+  {
+    id: 29,
+    name: "Who is Santa?",
+    shortname: "who-is-santa",
+    description: `Ever wondered who Santa really is? 🤔
+
+Now’s your chance to reimagine his true identity with a fun, light-hearted twist! Create a short comic filled with Christmas magic 🎄, original characters 🎭, and a dash of holiday chaos.
+
+🖌️ What to submit:
+• A short comic of 3–5 pages  
+• A brief description of your inspiration (what sparked your Santa theory?)
+
+🌟 Let your panels sparkle, your jokes land, and your imagination sleigh!
+
+🗓️ Deadline: 02 January 2026
+🎁 Don’t just celebrate Christmas — redraw it.
+
+Santa might be closer than you think😉`,
+    poster: "/events/south/whoissanta.webp",
+    link: "https://forms.gle/BEicek8MfH6GJwZx9",
+  },
+  {
+    id: 30,
+    name: "Prompt-a-Palooza",
+    shortname: "prompt-a-palooza",
+    description: `This Christmas, ditch the paintbrush and let your words do the magic.
+Prompt-a-Palooza is a Christmas-themed AI prompt art competition where creativity meets AI. All you need is imagination, smart prompts, and a festive twist 🎁
+
+🧠 No experience? No problem.
+🎨 Just prompts, AI, and your creativity.
+👀 Expect unique visuals, fun ideas, and serious creative energy.
+
+📅 27th December – 3rd January
+
+Think you’ve got what it takes to turn prompts into art?
+Step in, experiment, and surprise yourself. ✨
+`,
+    poster: "/events/south/promptapalooza.webp",
+    link: "https://makemypass.com/event/prompt-a-palooza",
+  },
+  {
+    id: 31,
+    name: "Christmas Courtroom",
+    shortname: "christmas-courtroom",
+    description: `
+Santa Claus’s sleigh has been stolen, throwing the North Pole into chaos. With conflicting statements and hidden clues, the truth is anything but obvious.
+
+Christmas Courtroom is an online mock courtroom event where teams analyse case files, examine evidence, and uncover what really happened.
+
+🔍 Event Details
+👥 Team size: 3–4 members
+💻 Mode: Online
+⏲️ Duration: 4 days
+📅 Starts: 1st January
+
+Open for people with a strong sense of:👀 
+Strong speakers
+Critical thinkers
+Problem solvers
+
+People who enjoy analysing situations and questioning narratives
+
+🎁 Rewards: Exciting µLearn goodies
+
+🎄 Will justice be served?`,
+    poster: "/events/south/christmascourtroom.webp",
+    link: "https://makemypass.com/event/christmas-courtroom",
+  },
+];
