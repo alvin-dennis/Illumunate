@@ -114,9 +114,27 @@ This is where understanding leaves a trace.
     id: 25,
     name: "Santas Startup Pitch",
     shortname: "santas-startup-pitch",
-    description: "Participate in community gift-giving initiatives.",
-    poster: null,
-    link: null,
+    description: `Santa’s Shark Tank is a fun and creative online pitching event where Santa himself is the judge. Participants must think like Santa and pitch startup ideas that can help Santa.
+
+The challenge is simple: identify a real problem Santa faces and propose a smart, practical solution that makes his mission better.
+
+
+You can participate either as a team or as an individual
+
+The event has two rounds:
+
+📝 Round 1: PPT Submission
+📂 Submit a 6–8 slides through the Google Drive link
+
+🎤 Round 2: Live Presentation
+
+“Good ideas don’t need magic—just clarity.”
+
+ Mode: Online
+Open to all
+LAST DATE TO REGISTER:- DECEMBER 31`,
+    poster: "/events/south/santastartuppitch.webp",
+    link: "https://makemypass.com/event/santas-shark-tank",
   },
   {
     id: 26,
@@ -199,8 +217,7 @@ Step in, experiment, and surprise yourself. ✨
     id: 31,
     name: "Christmas Courtroom",
     shortname: "christmas-courtroom",
-    description: `
-Santa Claus’s sleigh has been stolen, throwing the North Pole into chaos. With conflicting statements and hidden clues, the truth is anything but obvious.
+    description: `Santa Claus’s sleigh has been stolen, throwing the North Pole into chaos. With conflicting statements and hidden clues, the truth is anything but obvious.
 
 Christmas Courtroom is an online mock courtroom event where teams analyse case files, examine evidence, and uncover what really happened.
 
