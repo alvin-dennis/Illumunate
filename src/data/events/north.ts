@@ -101,8 +101,7 @@ export const northEvents: ZonalEvents["north"] = [
     id: 8,
     name: "µWishes",
     shortname: "muwishes",
-    description: `
-Turn festive cheer into beautiful web experiences! µWishes invites participants to design a personalized Christmas wishes website where users can create and share custom greetings, heartfelt messages, and joyful festive visuals. Blend creativity with coding and build a website that truly spreads the magic of Christmas! 📈
+    description: `Turn festive cheer into beautiful web experiences! µWishes invites participants to design a personalized Christmas wishes website where users can create and share custom greetings, heartfelt messages, and joyful festive visuals. Blend creativity with coding and build a website that truly spreads the magic of Christmas! 📈
 
 📜 Guidelines:
 ✅ A fully functional website must be submitted
