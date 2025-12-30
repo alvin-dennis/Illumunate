@@ -123,8 +123,20 @@ Turn festive cheer into beautiful web experiences! µWishes invites participants
     id: 9,
     name: "Malabar Santa",
     shortname: "malabar-santa",
-    description: "Redesign a Christmas-themed app interface.",
-    poster: null,
-    link: null,
+    description: `Celebrate Christmas with a Malabari Twist! Redesign Santa to reflect Malabar’s unique attire, food, or lifestyle. 
+
+📸 The Challenge Submit a Photo or Short Video (max 45s) of your Malabari Santa. Think Santa in a mundu, enjoying local treats, or in a coastal setting! 
+
+
+🗓️ Deadline January 3rd
+
+📝 Quick Rules
+Format: Photo (JPG/PNG) or Video (MP4). 
+Culture: Malabar identity must be clearly visible. 
+Originality: Original content only. 
+
+Submission: Upload to Google Drive and share the link in the form. `,
+    poster: "/events/north/malabarsanta.webp",
+    link: "https://forms.gle/wtArip4zfLWyuSTK8",
   },
 ];
