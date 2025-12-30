@@ -5,9 +5,31 @@ export const southEvents: ZonalEvents["south"] = [
     id: 20,
     name: "μSanta",
     shortname: "mu-santa",
-    description: "Perform your best Christmas carols and win hearts.",
-    poster: null,
-    link: null,
+    description: `μSanta challenges creators to reimagine Santa Claus through the lens of different cultures, traditions, and belief systems, using AI as a creative tool — not a shortcut.
+
+🎨 What Participants Create
+Participants must create an original AI-generated image,which is accompanied by a backstory that explains:
+	•	Who this Santa is
+	•	Where they come from
+	•	What role they play within that culture
+
+(view documentation for backstory presentation)
+
+From ancient folklore to modern reinterpretations, μSanta celebrates storytelling, authenticity, and imagination.
+
+✨ Core Idea
+This is not about making Santa look different.
+It’s about making Santa belong.
+
+📍Event Mode: Online
+  
+🗓 Important Dates
+	•	Registration Opens: 28-12-2025 | 12:00 AM
+	•	Registration Deadline: 30-12-2025 | 12:00 AM
+	•	Event Starts: 30-12-2025 | 12:00 AM
+	•	Project Submission Deadline: 02-01-2026 | 12:00 AM`,
+    poster: "/events/south/musanta.webp",
+    link: "https://forms.gle/pFbdDXZ6LDRoxDvKA",
   },
   {
     id: 21,
@@ -106,9 +128,26 @@ This is where understanding leaves a trace.
     id: 24,
     name: "Santa’s Blog",
     shortname: "santas-blog",
-    description: "Participate in community gift-giving initiatives.",
-    poster: null,
-    link: null,
+    description: `Ever wondered what really happens behind the red suit? 🎅
+This Christmas, step into Santa’s shoes and tell your version of the night that keeps the world believing.
+
+Behind the Beard Man is a blog writing competition where you become Santa for a day — feeling the rush, the chaos, the joy, and the quiet moments no one talks about.
+
+No myths. No fairytales.
+Just a story — from inside the suit.
+
+📝 Write from the heart.
+🎄 Keep it real.
+✨ Let your words carry the magic.
+👤 Perspective: You, as Santa
+
+📅 Online Event
+📝 Registration Deadline: 02 Jan 2026
+
+No exaggeration. No clichés.
+Just a story that reminds us Santa is not a myth—but a man.`,
+    poster: "/events/south/santablog.webp",
+    link: "https://makemypass.com/event/behind-the-beard-man",
   },
   {
     id: 25,
