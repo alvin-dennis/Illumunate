@@ -8,8 +8,8 @@ export const navLinks = [
 
 export const stats:Stat[] = [
   { value: 3, label: "Zones" },
-  { value: 30, label: "Events", suffix: "+" },
-  { value: 20, label: "Colleges", suffix: "+" },
+  { value: 20, label: "Events", suffix: "+" },
+  { value: 30, label: "Colleges", suffix: "+" },
 ];
 
 export const concepts = [
