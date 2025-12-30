@@ -93,7 +93,7 @@ const Results = () => {
                         </MotionH1>
 
                         <MotionP
-                            className="text-editorial text-lg max-w-xl mx-auto"
+                            className="text-lg max-w-xl mx-auto"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.3 }}
@@ -206,7 +206,7 @@ const Results = () => {
                                                         )}
                                                     </MotionDiv>
                                                     <div className="flex-1 min-w-0 relative z-10">
-                                                        <h3 className="text-xl md:text-2xl uppercase text-foreground truncate group-hover:text-gradient transition-all duration-300">
+                                                        <h3 className="text-xl md:text-2xl uppercase text-foreground truncate transition-all duration-300">
                                                             {college.name}
                                                         </h3>
                                                     </div>
@@ -300,7 +300,7 @@ const Results = () => {
                                                     </MotionDiv>
 
                                                     <div className="flex-1 min-w-0 relative z-10">
-                                                        <h3 className="text-xl md:text-2xl text-foreground truncate group-hover:text-gradient transition-all duration-300">
+                                                        <h3 className="text-xl md:text-2xl text-foreground truncate transition-all duration-300">
                                                             {student.name}
                                                         </h3>
                                                         <p className="text-sm text-muted-foreground  truncate mt-1">
@@ -353,25 +353,25 @@ const Results = () => {
 
                         {((activeTab === 'zonal' && zonalLeaderboard.length === 0) ||
                             (activeTab === 'students' && studentLeaderboard.length === 0)) && (
-                            <MotionDiv
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                className="text-center py-20"
-                            >
-                                <Sparkles className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+                                <MotionDiv
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    className="text-center py-20"
+                                >
+                                    <Sparkles className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
 
-                                <h3 className="text-lg font-semibold mb-2">
-                                    Leaderboard coming soon 🚀
-                                </h3>
+                                    <h3 className="text-lg font-semibold mb-2">
+                                        Leaderboard coming soon 🚀
+                                    </h3>
 
-                                <p className="text-muted-foreground mb-2">
-                                    No rankings available at the moment.
-                                </p>
+                                    <p className="text-muted-foreground mb-2">
+                                        No rankings available at the moment.
+                                    </p>
 
-                                <p className="text-sm text-muted-foreground">
-                                    Scores are being updated — check back later to see who’s on top.
-                                </p>
-                            </MotionDiv>
+                                    <p className="text-sm text-muted-foreground">
+                                        Scores are being updated — check back later to see who’s on top.
+                                    </p>
+                                </MotionDiv>
 
                             )}
                     </div>

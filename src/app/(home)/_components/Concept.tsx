@@ -36,10 +36,10 @@ export default function Concept() {
                     {concept.number}
                   </span>
                 </div>
-                <h3 className="text-3xl md:text-4xl mb-4 group-hover:text-gradient transition-all duration-500">
+                <h3 className="text-3xl md:text-4xl mb-4 transition-all duration-500">
                   {concept.title}
                 </h3>
-                <p className="text-editorial text-sm">
+                <p className="text-sm">
                   {concept.description}
                 </p>
               </MotionDiv>

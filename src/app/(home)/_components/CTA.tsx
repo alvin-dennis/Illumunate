@@ -20,7 +20,7 @@ export default function CTA() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-editorial text-lg max-w-md mx-auto mb-16"
+            className="text-lg max-w-md mx-auto mb-16"
           >
             Be part of an experience that transcends traditional celebration.
           </MotionP>

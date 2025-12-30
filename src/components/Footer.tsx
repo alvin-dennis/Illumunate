@@ -22,7 +22,7 @@ export default function Footer() {
                   />
                 </MotionDiv>
               </Link>
-              <p className="text-editorial text-sm max-w-xs">
+              <p className="text-sm max-w-xs">
                 Illuµnate is the annual Christmas festival organized by µLearn,
                 bringing together students from various colleges to celebrate the
                 festive season with joy, creativity, and community spirit.

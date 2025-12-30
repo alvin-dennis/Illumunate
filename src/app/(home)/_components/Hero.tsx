@@ -66,7 +66,7 @@ export default function Hero() {
 
           <MotionP
             variants={fadeInUp}
-            className="text-editorial text-lg md:text-xl max-w-xl mx-auto mb-10"
+            className="text-lg md:text-xl max-w-xl mx-auto mb-10"
           >
             A festival that redefines Christmas through immersive zones,
             captivating events, and vibrant college participation.

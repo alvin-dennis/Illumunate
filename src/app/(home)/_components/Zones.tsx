@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { zoneData } from '@/data/zones';
 import { MotionDiv } from '@/components/Framer';
 
-export default function Zones(){
+export default function Zones() {
   const [hoveredZone, setHoveredZone] = useState<string | null>(null);
 
   return (
@@ -72,7 +72,7 @@ export default function Zones(){
                           {String(index + 1).padStart(2, '0')}
                         </span>
                         <div>
-                          <h3 className="text-4xl md:text-6xl lg:text-7xl group-hover:text-gradient transition-all duration-500">
+                          <h3 className="text-4xl md:text-6xl lg:text-7xl transition-all duration-500">
                             {zone.name}
                           </h3>
                           <p className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">

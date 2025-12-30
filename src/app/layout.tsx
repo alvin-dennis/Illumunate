@@ -62,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${circe.variable} ${helvetica.variable} font-body bg-background antialiased text-muted-foreground`}
+        className={`${circe.variable} ${helvetica.variable} font-body bg-background antialiased text-foreground`}
       >
         <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
           <Background />
