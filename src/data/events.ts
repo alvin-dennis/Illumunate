@@ -8,7 +8,7 @@ export const zonalEvents: ZonalEvents = {
       shortname: "merry-craft",
       description: "Create stunning visual designs in a timed competition.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export const zonalEvents: ZonalEvents = {
       shortname: "santas-sledge",
       description: "Design a logo that captures the spirit of Illuµnate.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ export const zonalEvents: ZonalEvents = {
       shortname: "roblox-game-dev",
       description: "Redesign a Christmas-themed app interface.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 5,
@@ -55,7 +55,7 @@ export const zonalEvents: ZonalEvents = {
       shortname: "snowverse",
       description: "Redesign a Christmas-themed app interface.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 6,
@@ -104,7 +104,7 @@ export const zonalEvents: ZonalEvents = {
       shortname: "muwishes",
       description: "Redesign a Christmas-themed app interface.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 9,
@@ -112,7 +112,7 @@ export const zonalEvents: ZonalEvents = {
       shortname: "malabar-santa",
       description: "Redesign a Christmas-themed app interface.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
   ],
 
@@ -233,9 +233,26 @@ One word. Infinite meaning. Make it count ! 💫`,
       id: 14,
       name: "Treasure Hunt",
       shortname: "treasure-hunt",
-      description: "Create a festive web application from scratch.",
-      poster: null,
-      link: "https://forms.gle/decoration-signup",
+      description: `Santa's lost his way from the North Pole to Kerala, and he needs YOUR help! 🎄✨
+Embark on an epic Christmas-themed adventure filled with mysteries, puzzles, and festive challenges. Follow the clues, crack the codes, and guide Santa safely to God's Own Country!
+
+You'll get a special website and access code to track your journey, and watch your progress unfold on a live status page. Are you ready to be Santa's hero? 🦌🔍
+
+💻 Mode: Online 🌐
+
+📝 Registration Date : 
+28/12/2025 to
+02/01/2026
+
+📅 Event Date & Time : 
+03/01/2026
+
+🤔 Why join? 
+Because adventure awaits! Test your detective skills, race against time, and help Santa complete his magical journey. Plus, bragging rights for being the ultimate mystery solver! 🏆🎁
+
+The hunt is on—let the adventure begin`,
+      poster: "/events/central/treasurehunt.webp",
+      link: "https://forms.gle/gEt4mfsybFD7VefK9",
     },
     {
       id: 15,
@@ -354,11 +371,31 @@ Code it. Design it. Make it magical! ✨🖥️`,
     },
     {
       id: 19,
-      name: "Code of Eve - Discord Bot Competition",
+      name: "Code of Eve",
       shortname: "code-of-eve",
-      description: "Create a festive web application from scratch.",
-      poster: null,
-      link: "https://forms.gle/decoration-signup",
+      description: `Ready to code some Christmas magic? ✨👨‍💻 
+Design and develop a festive Discord bot for the Code to Eve community that brings joy, usefulness, and holiday cheer to every channel ! Think Santa's little helper, but in code form. 🎅💬
+
+Focus Areas:
+
+⚙️ Functionality & Stability
+🎄 Creativity & Christmas Theme
+🌟 Usefulness & Community Impact
+☁️ Hosting & Availability
+📝 Code Quality & Documentation
+
+💻 Mode: Online 🌐
+
+📝 Registration Date: 1st January  2025
+
+📅 Event Date & Time: 3rd January 2026 , 7:00pm
+
+🤔 Why join? 
+Because building a bot that spreads Christmas cheer while solving real community challenges is the ultimate developer flex! Sharpen your coding skills and create something that actually makes a difference.🏆💻
+
+Code. Deploy. Spread the cheer! 🎄💚`,
+      poster: "/events/central/codetoeve.webp",
+      link: "https://airtable.com/appt8Tm0mZgUzDw13/paggU4MSTHu8HIuHC/form",
     },
   ],
 
@@ -369,7 +406,7 @@ Code it. Design it. Make it magical! ✨🖥️`,
       shortname: "mu-santa",
       description: "Perform your best Christmas carols and win hearts.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 21,
@@ -399,7 +436,7 @@ Minimal, playful, or warm—your design should feel intentional and user-first.`
       shortname: "santacraft",
       description: "Transform spaces with festive decorations.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 23,
@@ -470,7 +507,7 @@ This is where understanding leaves a trace.
       shortname: "santas-blog",
       description: "Participate in community gift-giving initiatives.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 25,
@@ -478,7 +515,7 @@ This is where understanding leaves a trace.
       shortname: "santas-startup-pitch",
       description: "Participate in community gift-giving initiatives.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 26,
@@ -507,7 +544,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
       shortname: "santa-hiring-vibathon",
       description: "Participate in community gift-giving initiatives.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 28,
@@ -515,7 +552,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
       shortname: "music-event",
       description: "Participate in community gift-giving initiatives.",
       poster: null,
-      link: "https://forms.gle/decoration-signup",
+      link: "null",
     },
     {
       id: 29,
