@@ -281,4 +281,24 @@ Code. Deploy. Spread the cheer! 🎄💚`,
     poster: "/events/central/codetoeve.webp",
     link: "https://airtable.com/appt8Tm0mZgUzDw13/paggU4MSTHu8HIuHC/form",
   },
+  {
+    id: 20,
+    name: "Hunter Claus",
+    shortname: "hunter-claus",
+    description: `Ho ho WHOA! 😱🎄 Get ready for the most festive battle you've ever played! 
+Step into a Christmas-themed BGMI solo match. Play as a jolly Santa trying to survive, or become a Hunter on a mission to take down every Santa in sight! 🔫🎁
+
+Limited weapons. Strict combat rules. Pure holiday chaos. This isn't your average match—it's Christmas with a competitive twist! Will you spread cheer or spread fear? 🎅💥
+
+💻 Mode: Online – Solo Match 🎮
+
+📝 Registration Dates:  1st January 2026
+
+📅 Event Date & Time:  1st January 2026 7:00 - 8:00 PM
+
+🤔 Why join?
+Because gaming gets even better when you add Christmas madness to it! Test your BGMI skills in a unique festive format, follow the challenge of restricted gameplay, and prove you're the ultimate Santa survivor or Hunter champion! 🏆🎄`,
+    poster: "/events/central/hunterclaus.webp",
+    link: "https://forms.gle/woKa5gnCdAb3R4sh8",
+  },
 ];

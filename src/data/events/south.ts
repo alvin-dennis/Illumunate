@@ -2,7 +2,7 @@ import { ZonalEvents } from "@/lib/types";
 
 export const southEvents: ZonalEvents["south"] = [
   {
-    id: 20,
+    id: 21,
     name: "μSanta",
     shortname: "mu-santa",
     description: `μSanta challenges creators to reimagine Santa Claus through the lens of different cultures, traditions, and belief systems, using AI as a creative tool — not a shortcut.
@@ -32,7 +32,7 @@ It’s about making Santa belong.
     link: "https://forms.gle/pFbdDXZ6LDRoxDvKA",
   },
   {
-    id: 21,
+    id: 22,
     name: "μSketch",
     shortname: "mu-sketch",
     description: `What if Christmas met design thinking?
@@ -54,7 +54,7 @@ Minimal, playful, or warm—your design should feel intentional and user-first.`
     link: "https://forms.gle/ikuiJ6hKaKBWrQ5c8",
   },
   {
-    id: 22,
+    id: 23,
     name: "SantaCraft",
     shortname: "santacraft",
     description: "Transform spaces with festive decorations.",
@@ -62,7 +62,7 @@ Minimal, playful, or warm—your design should feel intentional and user-first.`
     link: null,
   },
   {
-    id: 23,
+    id: 24,
     name: "CTF",
     shortname: "ctf",
     description: `A 6-hour online cybersecurity contest where insight matters more than speed and precision outweighs guesswork.
@@ -125,7 +125,7 @@ This is where understanding leaves a trace.
     link: "http://makemypass.com/event/ctf-illu-nate",
   },
   {
-    id: 24,
+    id: 25,
     name: "Santa’s Blog",
     shortname: "santas-blog",
     description: `Ever wondered what really happens behind the red suit? 🎅
@@ -150,7 +150,7 @@ Just a story that reminds us Santa is not a myth—but a man.`,
     link: "https://makemypass.com/event/behind-the-beard-man",
   },
   {
-    id: 25,
+    id: 26,
     name: "Santas Startup Pitch",
     shortname: "santas-startup-pitch",
     description: `Santa’s Shark Tank is a fun and creative online pitching event where Santa himself is the judge. Participants must think like Santa and pitch startup ideas that can help Santa.
@@ -176,7 +176,7 @@ LAST DATE TO REGISTER:- DECEMBER 31`,
     link: "https://makemypass.com/event/santas-shark-tank",
   },
   {
-    id: 26,
+    id: 27,
     name: "Meme-X",
     shortname: "meme-x",
     description: `What happens when Christmas meets humor?🤔 
@@ -197,7 +197,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
     link: "https://tinyurl.com/MEME-88",
   },
   {
-    id: 27,
+    id: 28,
     name: "Santa Hiring Vibathon",
     shortname: "santa-hiring-vibathon",
     description: "Participate in community gift-giving initiatives.",
@@ -205,7 +205,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
     link: null,
   },
   {
-    id: 28,
+    id: 29,
     name: "Music Event — μember",
     shortname: "music-event",
     description: "Participate in community gift-giving initiatives.",
@@ -213,7 +213,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
     link: null,
   },
   {
-    id: 29,
+    id: 30,
     name: "Who is Santa?",
     shortname: "who-is-santa",
     description: `Ever wondered who Santa really is? 🤔
@@ -234,7 +234,7 @@ Santa might be closer than you think😉`,
     link: "https://forms.gle/BEicek8MfH6GJwZx9",
   },
   {
-    id: 30,
+    id: 31,
     name: "Prompt-a-Palooza",
     shortname: "prompt-a-palooza",
     description: `This Christmas, ditch the paintbrush and let your words do the magic.
@@ -253,7 +253,7 @@ Step in, experiment, and surprise yourself. ✨
     link: "https://makemypass.com/event/prompt-a-palooza",
   },
   {
-    id: 31,
+    id: 32,
     name: "Christmas Courtroom",
     shortname: "christmas-courtroom",
     description: `Santa Claus’s sleigh has been stolen, throwing the North Pole into chaos. With conflicting statements and hidden clues, the truth is anything but obvious.
