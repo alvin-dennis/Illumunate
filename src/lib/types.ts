@@ -9,7 +9,7 @@ export type Event = {
   name: string;
   description: string;
   poster: string | null;
-  link: string;
+  link: string | null;
   shortname: string;
 };
 

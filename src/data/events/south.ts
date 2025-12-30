@@ -7,7 +7,7 @@ export const southEvents: ZonalEvents["south"] = [
     shortname: "mu-santa",
     description: "Perform your best Christmas carols and win hearts.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 21,
@@ -37,7 +37,7 @@ Minimal, playful, or warm—your design should feel intentional and user-first.`
     shortname: "santacraft",
     description: "Transform spaces with festive decorations.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 23,
@@ -108,7 +108,7 @@ This is where understanding leaves a trace.
     shortname: "santas-blog",
     description: "Participate in community gift-giving initiatives.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 25,
@@ -116,7 +116,7 @@ This is where understanding leaves a trace.
     shortname: "santas-startup-pitch",
     description: "Participate in community gift-giving initiatives.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 26,
@@ -145,7 +145,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
     shortname: "santa-hiring-vibathon",
     description: "Participate in community gift-giving initiatives.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 28,
@@ -153,7 +153,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
     shortname: "music-event",
     description: "Participate in community gift-giving initiatives.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 29,

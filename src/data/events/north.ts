@@ -7,7 +7,7 @@ export const northEvents: ZonalEvents["north"] = [
     shortname: "merry-craft",
     description: "Create stunning visual designs in a timed competition.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const northEvents: ZonalEvents["north"] = [
     shortname: "santas-sledge",
     description: "Design a logo that captures the spirit of Illuµnate.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const northEvents: ZonalEvents["north"] = [
     shortname: "roblox-game-dev",
     description: "Redesign a Christmas-themed app interface.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ export const northEvents: ZonalEvents["north"] = [
     shortname: "snowverse",
     description: "Redesign a Christmas-themed app interface.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 6,
@@ -103,7 +103,7 @@ export const northEvents: ZonalEvents["north"] = [
     shortname: "muwishes",
     description: "Redesign a Christmas-themed app interface.",
     poster: null,
-    link: "null",
+    link: null,
   },
   {
     id: 9,
@@ -111,6 +111,6 @@ export const northEvents: ZonalEvents["north"] = [
     shortname: "malabar-santa",
     description: "Redesign a Christmas-themed app interface.",
     poster: null,
-    link: "null",
+    link: null,
   },
 ];
