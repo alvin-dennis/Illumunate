@@ -5,7 +5,7 @@ export const zoneData = [
     tagline: "Mischief served daily",
     description:
       "Discover playful challenges and curiosity-driven learning where rules bend, creativity leads, and skills grow through joyful experimentation.",
-    mascot: "/mascots/mugly.png",
+    mascot: "/mascots/mugly.webp",
     gradient: "from-red-600 via-black to-red-600",
     color: "text-muted-foreground",
     bgColor: "bg-muted-foreground/10",
@@ -17,7 +17,7 @@ export const zoneData = [
     tagline: "µsic with Body Muscles",
     description:
       "Flex your muscles with creative electronics, coding, and AI storytelling. Festive spirit meets innovative logic to illµnate your journey.",
-    mascot: "/mascots/ponji.png",
+    mascot: "/mascots/ponji.webp",
     gradient: "from-amber-500 via-yellow-400 to-amber-500",
     color: "text-accent",
     bgColor: "bg-accent/10",
@@ -29,7 +29,7 @@ export const zoneData = [
     tagline: "Certified hope dealer",
     description:
       "Celebrate the festive spirit with cultural performances, community activities, and joyful gatherings. south is where hearts come together.",
-    mascot: "/mascots/emby.png",
+    mascot: "/mascots/emby.webp",
     gradient: "from-emerald-500 via-green-400 to-emerald-500",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
