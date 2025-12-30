@@ -1,7 +1,7 @@
 export const zonalLeaderboard = [
-  // { rank: 1, name: "north", zone: "north", points: 4850 },
-  // { rank: 2, name: "central", zone: "central", points: 4620 },
-  // { rank: 3, name: "south", zone: "south", points: 4380 },
+  // { rank: 1, name: "north", points: 4850 },
+  // { rank: 2, name: "central", points: 4620 },
+  // { rank: 3, name: "south", points: 4380 },
 ];
 
 export const studentLeaderboard = [
