@@ -236,11 +236,30 @@ Who is an Elf and Reindeer?🤔
   },
   {
     id: 31,
-    name: "Music Event — μember",
-    shortname: "music-event",
-    description: "Participate in community gift-giving initiatives.",
-    poster: null,
-    link: null,
+    name: "μECHO",
+    shortname: "muecho",
+    description: `Want to share your talent in a calm, welcoming space? 🎤😎 
+
+μEcho is an open-stage event where performers of all kinds - singers, dancers, musicians, comedians, and more - come together to perform live. No competition - just music, good vibes, and shared moments.
+
+ Who can perform? 🤔 
+🎤  Vocal
+🎹  Instrumental
+💃🏼  Dance
+🤣  Stand-up Comedy
+🙃  Mimicry / Other
+
+🎯 Task : Perform live or online in your chosen category
+👤 Participation : Solo / Group / Band
+🌐 Mode : Hybrid (Online & Offline)
+📍 Offline Venue : Faya,Technopark Phase 1,Trivandrum
+📍 Online Platform :G Meet
+📅 Date : January 3
+⏱️ Time: 4 pm to 7pm
+
+ ✨ Be a part of the experience and let your talent shine at μEcho 💛`,
+    poster: "/events/south/muecho.webp",
+    link: "https://tinyurl.com/muecho88",
   },
   {
     id: 32,

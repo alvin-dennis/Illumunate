@@ -50,11 +50,19 @@ Let’s color the holiday with festive magic! ✨`,
   },
   {
     id: 3,
-    name: "Santa’s Sledge",
-    shortname: "santas-sledge",
-    description: "Design a logo that captures the spirit of Illuµnate.",
-    poster: null,
-    link: null,
+    name: "ScratchX",
+    shortname: "scratchx",
+    description: `ScratchX is a festive game development challenge where challengers can design and build an interactive Santa-themed game using Scratch, focusing on creativity, logic, smooth animations, and engaging gameplay mechanics.
+
+📜 Guidelines:
+❄️Games must be developed only using Scratch
+❄️The submitted game should be fully playable
+❄️Clear instructions must be included within the game
+❄️All assets used must be properly credited
+❄️Submissions must be completed before 3 january
+🗓 Event Duration: 30 Dec To  3 Jan`,
+    poster: "/events/north/scratchx.webp",
+    link: "https://tinyurl.com/mulearn-ScratchX",
   },
   {
     id: 4,
@@ -79,10 +87,22 @@ Let’s color the holiday with festive magic! ✨`,
   },
   {
     id: 5,
-    name: "Clash of Clans",
-    shortname: "santas-sledge",
-    description: "Design a logo that captures the spirit of Illuµnate.",
-    poster: null,
+    name: "Expectation vs Reality - Text Edition",
+    shortname: "expvsreal",
+    description: `Turn everyday moments into laughter! Participants share their most relatable Expectation vs Reality moments from college life, exams, hostel life, Christmas, or New Year in a simple two-line format. No posters or design work — just pure, honest, and funny reality vs what you imagined! 😄
+
+📜 Guidelines:
+✅ Text-only entries
+✅ Follow the given format strictly
+✅ Only one entry per participant
+✅ Keep content respectful and non-offensive
+✅ Do not mention names of individuals or institutions
+
+🗓 Deadline: 4 January 2026
+
+🎉 Rewards:
+⭐ Karma points for winners`,
+    poster: "/events/north/expectvsreal.webp",
     link: null,
   },
   {
@@ -130,7 +150,8 @@ Make it magical. Make it Christmas. 🤍
 
 🗓 Deadline: 31 December 2025
 
-🎉 Rewards: 
+🎉 Rewards:
+🎬 Netflix Subscription for Winner
 📢 Featuring of winning entries on social media pages
 ⭐ Karma points for participation and winners`,
     poster: "/events/north/xsnap.webp",
