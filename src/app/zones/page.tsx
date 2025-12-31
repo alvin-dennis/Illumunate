@@ -7,6 +7,7 @@ import { zoneData, zones } from "@/data/zones";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 export default function Zones() {
     const searchParams = useSearchParams();
@@ -81,6 +82,26 @@ export default function Zones() {
                                     <p className="text-muted-foreground text-lg mb-8">
                                         {activeZone.description}
                                     </p>
+
+                                    <div className="mb-6">
+                                        <h3 className="text-xl font-semibold mb-2">Districts:</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {activeZone.district && activeZone.district.length > 0 ? (
+                                                activeZone.district.map((d) => (
+                                                    <Badge
+                                                        key={d}
+                                                        className=" bg-muted-foreground/20 text-sm font-medium"
+                                                    >
+                                                        {d}
+                                                    </Badge>
+                                                ))
+                                            ) : (
+                                                <Badge className="text-sm bg-muted-foreground/20 text-muted-foreground">
+                                                    No districts assigned.
+                                                </Badge>
+                                            )}
+                                        </div>
+                                    </div>
 
                                     <Link href={`/events?zone=${activeZone.id}`}>
                                         <Button variant="default" className="group gap-2">

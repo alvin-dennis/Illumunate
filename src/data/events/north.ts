@@ -103,15 +103,36 @@ Let’s color the holiday with festive magic! ✨`,
 🎉 Rewards:
 ⭐ Karma points for winners`,
     poster: "/events/north/expectvsreal.webp",
-    link: null,
+    link: "https://tally.so/r/yP2NDX",
   },
   {
     id: 6,
-    name: "Among Us",
-    shortname: "santas-sledge",
-    description: "Design a logo that captures the spirit of Illuµnate.",
-    poster: null,
-    link: null,
+    name: "AMONG US – GAME NIGHT",
+    shortname: "among-us",
+    description: `Join us for a fun-filled Among Us Game Night, where strategy, deception, and teamwork collide. Whether you’re a master impostor or a sharp-eyed crewmate, this night is all about laughter, chaos, and networking.
+
+🗓 Date: January 2
+⏰ Time: 8:00 PM
+📍 Platform: μLearn Discord Lobby
+
+✨ What to Expect
+
+Casual & competitive Among Us matches
+
+Open networking with fellow gamers
+
+No karma, no pressure — just pure fun
+
+👥 Who Can Join?
+Open to all players
+Make sure Discord is installed and updated
+
+🎯 Why Join?
+Because sometimes the best connections are made while accusing your friends 😄
+
+🔗 Join. Play. Survive.`,
+    poster: "/events/north/amongus.webp",
+    link: "https://discord.gg/twxs8hqX",
   },
   {
     id: 7,
@@ -137,6 +158,28 @@ Make it magical. Make it Christmas. 🤍
   },
   {
     id: 8,
+    name: "µSnowVerse",
+    shortname: "musnowverse",
+    description: `Dive into the µSnowVerse and shape your own snowy Christmas realm! Create a digital Christmas snow globe that captures the magic of the season — cozy moments, sparkling lights, joyful characters, or glittering snowfall. Your globe can be still, animated, or interactive — it just needs your creativity. ❄️🎄
+
+Make it magical. Make it Christmas. 🤍
+
+📜 Guidelines:
+✅ Only one snow globe design/level is allowed
+✅ Christmas theme is compulsory
+✅ AI usage must be clearly disclosed (if used)
+✅ Ensure proper format and submission compliance
+
+🗓 Deadline:Jan 4 2026
+
+🎉 Rewards:
+📢 Winning entries will be featured on social media platforms
+⭐ Karma points for participants and winners`,
+    poster: "/events/north/musnowverse.webp",
+    link: "https://forms.gle/kM9Kix4bfL4p2Akx5",
+  },
+  {
+    id: 9,
     name: "X Snap",
     shortname: "x-snap",
     description: `Christmas is the season of lights, love, and unforgettable memories. Capture how you experience the festive spirit — sparkling stars, decorated trees, nativity cribs, colorful streets, warm family moments, or joyful smiles. Let your photograph tell a Christmas story and preserve the magic in a single frame. 🎅🎁
@@ -158,7 +201,7 @@ Make it magical. Make it Christmas. 🤍
     link: "https://tally.so/r/gDePA1",
   },
   {
-    id: 9,
+    id: 10,
     name: "µerry Quizmas",
     shortname: "murry-quizmas",
     description: `Ring in the season with brains, bells, and a dash of festive fun! µerry Quizmas is an exciting Christmas-themed quiz that puts your knowledge of traditions, stories, tech, and pop-culture trivia to the test. Play, compete, and find out how Christmas-smart you really are! 🎅🧠
@@ -178,7 +221,7 @@ Make it magical. Make it Christmas. 🤍
     link: "https://tally.so/r/44B6o5",
   },
   {
-    id: 10,
+    id: 11,
     name: "µWishes",
     shortname: "muwishes",
     description: `Turn festive cheer into beautiful web experiences! µWishes invites participants to design a personalized Christmas wishes website where users can create and share custom greetings, heartfelt messages, and joyful festive visuals. Blend creativity with coding and build a website that truly spreads the magic of Christmas! 📈
@@ -199,7 +242,7 @@ Make it magical. Make it Christmas. 🤍
     link: "https://tinyurl.com/Muwishes",
   },
   {
-    id: 11,
+    id: 12,
     name: "Malabar Santa",
     shortname: "malabar-santa",
     description: `Celebrate Christmas with a Malabari Twist! Redesign Santa to reflect Malabar’s unique attire, food, or lifestyle. 
