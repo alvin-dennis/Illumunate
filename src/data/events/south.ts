@@ -55,11 +55,27 @@ Minimal, playful, or warm—your design should feel intentional and user-first.`
   },
   {
     id: 23,
-    name: "SantaCraft",
-    shortname: "santacraft",
-    description: "Transform spaces with festive decorations.",
-    poster: null,
-    link: null,
+    name: "SantaCraft Creative",
+    shortname: "santacraft-creative",
+    description: `The Creative Build: "Architects of Advent"
+Can your team design the next North Pole landmark?
+
+The SantaCraft Creative Challenge is looking for more than just builders; we’re looking for visionaries. This is a high-speed test of aesthetic synergy where you and your team must blend your styles to create a festive masterpiece.
+
+🌟The Goal: Transform a blank winter plot into a holiday wonder using Minecraft 1.21.1’s newest textures and blocks.
+
+🌟The Synergy: It’s not about three people building separately; it’s about one cohesive vision. How well can you finish your partner’s patterns?
+
+"In the world of blocks, creativity is the only limit—but teamwork is the only way to reach it."
+
+📅Key Dates:
+
+📝Registration Deadline: 03 Jan 2026
+🚀Event Date: Jan 04, 2026
+
+Register your team now & etch your legacy in the snow!`,
+    poster: "/events/south/santacraftcreative.webp",
+    link: "https://docs.google.com/forms/d/1VAkNyTQtuE3O-hRAnIQewylrWXOGY5wH7aOREbnRnAE/",
   },
   {
     id: 24,
@@ -278,5 +294,29 @@ People who enjoy analysing situations and questioning narratives
 🎄 Will justice be served?`,
     poster: "/events/south/christmascourtroom.webp",
     link: "https://makemypass.com/event/christmas-courtroom",
+  },
+  {
+    id: 33,
+    name: "SantaCraft Survival",
+    shortname: "santacraft-survival",
+    description: `The PvP Event: "Guardians of the Gift"
+ Three players, one life. Will you be the last team standing?
+
+Frostbite isn’t the only thing that bites in the SantaCraft Survival Games. This is a tactical, high-stakes arena where individual skill takes a backseat to team coordination. If your teammate falls, your chances of victory vanish.
+
+🌟Tactical Survival: Scavenge, gear up, and hold the high ground in a custom winter arena.
+
+🌟Protect the Partner: Success is measured by how well you cover each other's backs. Flank, distraction, and rescue maneuvers are the keys to the crown.
+
+Are you the shield or the sword? 
+
+📅Key Dates:
+
+📝Registration Deadline: 03 Jan 2026
+🚀Event Date: Jan 04, 2026
+
+Register your team now & etch your legacy in the snow!`,
+    poster: "/events/south/santacraftsurvival.webp",
+    link: "https://docs.google.com/forms/d/1VAkNyTQtuE3O-hRAnIQewylrWXOGY5wH7aOREbnRnAE/",
   },
 ];

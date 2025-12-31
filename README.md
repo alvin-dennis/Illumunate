@@ -1,3 +1,3 @@
-# Illumunate-2025
+# Illumunate
 
 A Christmas festival for µLearn
