@@ -15,8 +15,7 @@ export const metadata: Metadata = {
   title: "Illuµnate — µLearn",
   description:
     "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
-  authors: [{ name: "µLearn", url: "https://illumunate.mulearn.org/" }],
-  metadataBase: new URL("https://illumunate.mulearn.org/"),
+  authors: [{ name: "µLearn" }],
   openGraph: {
     title: "Illuµnate — µLearn",
     description:
@@ -26,22 +25,16 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.svg",
+        url: "/logo.png",
         alt: "Illuµnate — µLearn",
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Illuµnate — µLearn",
-    description:
-      "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn.",
-    images: ["/logo.svg"],
-  },
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
   },
+  metadataBase: new URL("https://illumunate.mulearn.org/"),
 };
 
 const circe = localFont({

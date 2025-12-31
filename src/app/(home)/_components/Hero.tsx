@@ -51,7 +51,7 @@ export default function Hero() {
 
           <MotionDiv variants={fadeInUp} className="flex justify-center mb-8">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="Illumunate Logo"
               width={800}
               height={650}

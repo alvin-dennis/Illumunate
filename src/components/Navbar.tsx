@@ -42,12 +42,13 @@ const Navbar = () => {
           <Link href="/" className="relative z-10">
             <MotionDiv whileHover={{ scale: 1.03 }}>
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Illumunate Logo"
                 width={170}
                 height={170}
-                preload
                 className="h-auto"
+                priority
+                fetchPriority="high"
               />
             </MotionDiv>
           </Link>
@@ -89,16 +90,17 @@ const Navbar = () => {
             </Link>
           </MotionDiv>
 
-          <button
+          <Button
+            variant={"default"}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 relative z-10"
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
+              <X className="w-8 h-8" />
             ) : (
-              <Menu className="w-6 h-6" />
+              <Menu className="w-8 h-8" />
             )}
-          </button>
+          </Button>
         </div>
 
         <AnimatePresence>

@@ -6,12 +6,13 @@ export default function Loader() {
             <div className="p-4 shadow-lg flex items-center justify-center animate-pulse transition-all ease-out">
                 <div className="relative">
                     <Image
-                        src="/logo.svg"
+                        src="/logo.png"
                         alt="Illumunate Logo"
                         width={170}
                         height={170}
                         preload
                         className="h-auto"
+                        priority
                     />
                 </div>
             </div>

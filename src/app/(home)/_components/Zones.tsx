@@ -10,7 +10,7 @@ export default function Zones() {
   const [hoveredZone, setHoveredZone] = useState<string | null>(null);
 
   return (
-    <section className="relative py-40 overflow-hidden">
+    <section className="relative py-30 overflow-hidden">
       <MotionDiv
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[200px] transition-opacity duration-700"
         animate={{
