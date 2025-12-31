@@ -13,8 +13,6 @@ Participants must create an original AI-generated image,which is accompanied by 
 	•	Where they come from
 	•	What role they play within that culture
 
-(view documentation for backstory presentation)
-
 From ancient folklore to modern reinterpretations, μSanta celebrates storytelling, authenticity, and imagination.
 
 ✨ Core Idea
@@ -69,7 +67,6 @@ The SantaCraft Creative Challenge is looking for more than just builders; we’r
 "In the world of blocks, creativity is the only limit—but teamwork is the only way to reach it."
 
 📅Key Dates:
-
 📝Registration Deadline: 03 Jan 2026
 🚀Event Date: Jan 04, 2026
 
@@ -156,7 +153,6 @@ Frostbite isn’t the only thing that bites in the SantaCraft Survival Games. Th
 Are you the shield or the sword? 
 
 📅Key Dates:
-
 📝Registration Deadline: 03 Jan 2026
 🚀Event Date: Jan 04, 2026
 
@@ -172,11 +168,9 @@ Register your team now & etch your legacy in the snow!`,
 
 The challenge is simple: identify a real problem Santa faces and propose a smart, practical solution that makes his mission better.
 
-
 You can participate either as a team or as an individual
 
 The event has two rounds:
-
 📝 Round 1: PPT Submission
 📂 Submit a 6–8 slides through the Google Drive link
 
@@ -220,9 +214,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
 Santa Hiring Vibeathon is a beginner friendly challenge where participants create a fictional portfolio of an Elf or Reindeer applying to Santa’s workshop, showcasing creative ideas, skills, or smart tech concepts.
 
 Who is an Elf and Reindeer?🤔
-
 🧝‍♂️*Elf* :Creative builders of Santa’s workshop who design, manage, and optimize toy production.
-
 🦌 Reindeer  :Santa’s logistics and delivery experts.
 
 🧠 Task: Create a character based portfolio (Elf/Reindeer)  

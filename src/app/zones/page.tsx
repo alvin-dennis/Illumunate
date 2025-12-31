@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
 import { zoneData, zones } from "@/data/zones";
@@ -13,6 +14,7 @@ export default function Zones() {
     const searchParams = useSearchParams();
     const router = useRouter();
     const zoneParam = searchParams.get("zone");
+    const [mascotLoaded, setMascotLoaded] = useState(false)
 
     const activeZone =
         zoneData.find((z) => z.id === zoneParam) || zoneData[1];
@@ -62,14 +64,20 @@ export default function Zones() {
 
                             <div className="relative z-10 flex flex-col md:flex-row gap-8">
                                 <div className="flex-1">
-                                    <div className={`w-30 h-auto rounded-2xl ${activeZone.bgColor} flex items-center justify-center mb-6`}>
+                                    <div
+                                        className={`relative w-30 h-auto rounded-2xl flex items-center justify-center mb-6 overflow-hidden ${activeZone.bgColor
+                                            } ${!mascotLoaded ? "animate-pulse" : ""}`}
+                                    >
                                         <Image
                                             key={activeZone.id}
                                             src={activeZone.mascot}
                                             alt={`${activeZone.name} mascot`}
                                             width={66}
                                             height={70}
-                                            className="object-cover transition-opacity duration-300"
+                                            className={`object-cover transition-opacity duration-300 ${mascotLoaded ? "opacity-100" : "opacity-0"
+                                                }`}
+                                            loading="lazy"
+                                            onLoad={() => setMascotLoaded(true)}
                                         />
                                     </div>
 

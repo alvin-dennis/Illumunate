@@ -16,7 +16,7 @@ export const zoneData = [
     ],
     gradient: "from-red-600 via-black to-red-600",
     color: "text-muted-foreground",
-    bgColor: "bg-muted-foreground/10",
+    bgColor: "bg-primary",
     borderColor: "border-muted/30",
   },
   {
@@ -29,7 +29,7 @@ export const zoneData = [
     district: ["Thrissur", "Ernakulam", "Idukki", "Kottayam"],
     gradient: "from-amber-500 via-yellow-400 to-amber-500",
     color: "text-accent",
-    bgColor: "bg-accent/10",
+    bgColor: "bg-accent",
     borderColor: "border-accent/30",
   },
   {
@@ -42,7 +42,7 @@ export const zoneData = [
     district: ["Alappuzha", "Kollam", "Thiruvananthapuram", "Pathanamthitta"],
     gradient: "from-emerald-500 via-green-400 to-emerald-500",
     color: "text-secondary",
-    bgColor: "bg-secondary/10",
+    bgColor: "bg-secondary",
     borderColor: "border-secondary/30",
   },
 ];

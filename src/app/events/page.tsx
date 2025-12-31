@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -25,6 +26,7 @@ import Link from "next/link";
 export default function Events() {
     const searchParams = useSearchParams();
     const router = useRouter();
+    const [loaded, setLoaded] = useState(false)
 
     const activeZone =
         (searchParams.get("zone") as "north" | "central" | "south") || "central";
@@ -81,17 +83,18 @@ export default function Events() {
                     border ${activeStyles.borderColor}
                     flex flex-col`}
                                 >
-                                    <div className="h-40 w-full overflow-hidden">
-                                        {event.poster ? (
+                                    <div className="h-40 w-full overflow-hidden bg-gradient-to-br from-red-700 via-red-800 to-black">
+                                        {event.poster && (
                                             <Image
                                                 src={event.poster}
                                                 alt={event.name}
                                                 width={800}
                                                 height={400}
-                                                className="w-full h-full object-cover"
+                                                className={`w-full h-full object-cover transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"
+                                                    }`}
+                                                onLoad={() => setLoaded(true)}
+                                                loading="lazy"
                                             />
-                                        ) : (
-                                            <div className="w-full h-full bg-gradient-to-br from-red-700 via-red-800 to-black" />
                                         )}
                                     </div>
 

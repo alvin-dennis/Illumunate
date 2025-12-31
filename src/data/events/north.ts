@@ -116,11 +116,8 @@ Let’s color the holiday with festive magic! ✨`,
 📍 Platform: μLearn Discord Lobby
 
 ✨ What to Expect
-
 Casual & competitive Among Us matches
-
 Open networking with fellow gamers
-
 No karma, no pressure — just pure fun
 
 👥 Who Can Join?
@@ -158,25 +155,21 @@ Make it magical. Make it Christmas. 🤍
   },
   {
     id: 8,
-    name: "µSnowVerse",
-    shortname: "musnowverse",
-    description: `Dive into the µSnowVerse and shape your own snowy Christmas realm! Create a digital Christmas snow globe that captures the magic of the season — cozy moments, sparkling lights, joyful characters, or glittering snowfall. Your globe can be still, animated, or interactive — it just needs your creativity. ❄️🎄
+    name: "Clash Wars",
+    shortname: "clashwars",
+    description: `Think your attacks are flawless?
+Time to prove it on the battlefield.
 
-Make it magical. Make it Christmas. 🤍
+🏰 Finish the given Town Hall
+⚡ Fastest + cleanest attack wins
+🎮 Pure Clash skills. No luck. No excuses.
 
-📜 Guidelines:
-✅ Only one snow globe design/level is allowed
-✅ Christmas theme is compulsory
-✅ AI usage must be clearly disclosed (if used)
-✅ Ensure proper format and submission compliance
+📅 Jan 3
 
-🗓 Deadline:Jan 4 2026
-
-🎉 Rewards:
-📢 Winning entries will be featured on social media platforms
-⭐ Karma points for participants and winners`,
-    poster: "/events/north/musnowverse.webp",
-    link: "https://forms.gle/kM9Kix4bfL4p2Akx5",
+Sharpen your strategy.
+Lead your clan to glory. 🏆🔥`,
+    poster: "/events/north/clashwars.webp",
+    link: "https://tinyurl.com/clashwars-mulearn",
   },
   {
     id: 9,
@@ -248,7 +241,6 @@ Make it magical. Make it Christmas. 🤍
     description: `Celebrate Christmas with a Malabari Twist! Redesign Santa to reflect Malabar’s unique attire, food, or lifestyle. 
 
 📸 The Challenge Submit a Photo or Short Video (max 45s) of your Malabari Santa. Think Santa in a mundu, enjoying local treats, or in a coastal setting! 
-
 
 🗓️ Deadline January 3rd
 
