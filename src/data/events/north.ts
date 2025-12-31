@@ -5,9 +5,25 @@ export const northEvents: ZonalEvents["north"] = [
     id: 1,
     name: "Merry Craft",
     shortname: "merry-craft",
-    description: "Create stunning visual designs in a timed competition.",
-    poster: null,
-    link: null,
+    description: `The most magical time of the year is here! We invites you to unleash your creative spirit and design a Christmas card that captures the warmth and joy of the season. 🌟
+
+🎄 Hosted by: MuLearn Devagiri 
+
+🎁 How to Participate:
+1️⃣ Get Creative: Design a unique Christmas card that spreads holiday cheer.
+2️⃣ Tools of the Trade: Use Canva, Figma, Photoshop, or any tool of your choice.
+3️⃣ Submit: Upload your masterpiece via the link below before the deadline!
+
+⭐ Rewards:
+Win exclusive MuLearn Karma points to boost your profile and celebrate your creativity!
+
+📝 Submission Details:
+Format: JPG, PNG, PDF, PSD, AI, etc.
+Deadline: 3rd January 2026 ⏰
+
+Let’s color the holiday with festive magic! ✨`,
+    poster: "events/north/merrycraft.webp",
+    link: "https://airtable.com/appGbQllcamSsKWoO/pagSMxrmfCq1aotMJ/form",
   },
   {
     id: 2,
@@ -44,17 +60,44 @@ export const northEvents: ZonalEvents["north"] = [
     id: 4,
     name: "Roblox Game Dev",
     shortname: "roblox-game-dev",
-    description: "Redesign a Christmas-themed app interface.",
-    poster: null,
-    link: null,
+    description: `Bring the magic of Christmas to Roblox! Participants will design and develop a festive simulation game in Roblox Studio where players take on the role of Santa’s elves, racing against time to prepare for Christmas. Focus on task management, resource handling, toy crafting, and upgrading workstations, while creating a fun, engaging, and interactive gameplay experience. Collaborate or compete in teams, and transform the joy of Christmas into an immersive game world!🧑🏻‍🎄
+
+📜 Guidelines:
+✅ Game must be developed entirely in Roblox Studio
+✅ Only original work; no copied or pre-made templates
+✅ Ensure stable and playable gameplay without major bugs
+✅ Provide clear instructions for players
+✅ Teams of up to 4 participants; cross-college teams allowed
+
+🗓 Deadline:Jan 4 2026
+
+🎉 Rewards:
+📢 Winning games will be featured on social media pages
+⭐ Karma points`,
+    poster: "events/north/robloxgamedev.webp",
+    link: "https://forms.gle/KdTS8wAUSKVqEhjS7",
   },
   {
     id: 5,
     name: "µSnowVerse",
-    shortname: "snowverse",
-    description: "Redesign a Christmas-themed app interface.",
-    poster: null,
-    link: null,
+    shortname: "musnowverse",
+    description: `Dive into the µSnowVerse and shape your own snowy Christmas realm! Create a digital Christmas snow globe that captures the magic of the season — cozy moments, sparkling lights, joyful characters, or glittering snowfall. Your globe can be still, animated, or interactive — it just needs your creativity. ❄️🎄
+
+Make it magical. Make it Christmas. 🤍
+
+📜 Guidelines:
+✅ Only one snow globe design/level is allowed
+✅ Christmas theme is compulsory
+✅ AI usage must be clearly disclosed (if used)
+✅ Ensure proper format and submission compliance
+
+🗓 Deadline:Jan 4 2026
+
+🎉 Rewards:
+📢 Winning entries will be featured on social media platforms
+⭐ Karma points for participants and winners`,
+    poster: "events/north/musnowverse.webp",
+    link: "https://forms.gle/kM9Kix4bfL4p2Akx5",
   },
   {
     id: 6,
