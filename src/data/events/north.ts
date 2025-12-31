@@ -22,7 +22,7 @@ Format: JPG, PNG, PDF, PSD, AI, etc.
 Deadline: 3rd January 2026 ⏰
 
 Let’s color the holiday with festive magic! ✨`,
-    poster: "events/north/merrycraft.webp",
+    poster: "/events/north/merrycraft.webp",
     link: "https://airtable.com/appGbQllcamSsKWoO/pagSMxrmfCq1aotMJ/form",
   },
   {
@@ -74,11 +74,27 @@ Let’s color the holiday with festive magic! ✨`,
 🎉 Rewards:
 📢 Winning games will be featured on social media pages
 ⭐ Karma points`,
-    poster: "events/north/robloxgamedev.webp",
+    poster: "/events/north/robloxgamedev.webp",
     link: "https://forms.gle/KdTS8wAUSKVqEhjS7",
   },
   {
     id: 5,
+    name: "Clash of Clans",
+    shortname: "santas-sledge",
+    description: "Design a logo that captures the spirit of Illuµnate.",
+    poster: null,
+    link: null,
+  },
+  {
+    id: 6,
+    name: "Among Us",
+    shortname: "santas-sledge",
+    description: "Design a logo that captures the spirit of Illuµnate.",
+    poster: null,
+    link: null,
+  },
+  {
+    id: 7,
     name: "µSnowVerse",
     shortname: "musnowverse",
     description: `Dive into the µSnowVerse and shape your own snowy Christmas realm! Create a digital Christmas snow globe that captures the magic of the season — cozy moments, sparkling lights, joyful characters, or glittering snowfall. Your globe can be still, animated, or interactive — it just needs your creativity. ❄️🎄
@@ -96,11 +112,11 @@ Make it magical. Make it Christmas. 🤍
 🎉 Rewards:
 📢 Winning entries will be featured on social media platforms
 ⭐ Karma points for participants and winners`,
-    poster: "events/north/musnowverse.webp",
+    poster: "/events/north/musnowverse.webp",
     link: "https://forms.gle/kM9Kix4bfL4p2Akx5",
   },
   {
-    id: 6,
+    id: 8,
     name: "X Snap",
     shortname: "x-snap",
     description: `Christmas is the season of lights, love, and unforgettable memories. Capture how you experience the festive spirit — sparkling stars, decorated trees, nativity cribs, colorful streets, warm family moments, or joyful smiles. Let your photograph tell a Christmas story and preserve the magic in a single frame. 🎅🎁
@@ -121,7 +137,7 @@ Make it magical. Make it Christmas. 🤍
     link: "https://tally.so/r/gDePA1",
   },
   {
-    id: 7,
+    id: 9,
     name: "µerry Quizmas",
     shortname: "murry-quizmas",
     description: `Ring in the season with brains, bells, and a dash of festive fun! µerry Quizmas is an exciting Christmas-themed quiz that puts your knowledge of traditions, stories, tech, and pop-culture trivia to the test. Play, compete, and find out how Christmas-smart you really are! 🎅🧠
@@ -141,7 +157,7 @@ Make it magical. Make it Christmas. 🤍
     link: "https://tally.so/r/44B6o5",
   },
   {
-    id: 8,
+    id: 10,
     name: "µWishes",
     shortname: "muwishes",
     description: `Turn festive cheer into beautiful web experiences! µWishes invites participants to design a personalized Christmas wishes website where users can create and share custom greetings, heartfelt messages, and joyful festive visuals. Blend creativity with coding and build a website that truly spreads the magic of Christmas! 📈
@@ -162,7 +178,7 @@ Make it magical. Make it Christmas. 🤍
     link: "https://tinyurl.com/Muwishes",
   },
   {
-    id: 9,
+    id: 11,
     name: "Malabar Santa",
     shortname: "malabar-santa",
     description: `Celebrate Christmas with a Malabari Twist! Redesign Santa to reflect Malabar’s unique attire, food, or lifestyle. 

@@ -2,7 +2,7 @@ import { ZonalEvents } from "@/lib/types";
 
 export const southEvents: ZonalEvents["south"] = [
   {
-    id: 21,
+    id: 23,
     name: "μSanta",
     shortname: "mu-santa",
     description: `μSanta challenges creators to reimagine Santa Claus through the lens of different cultures, traditions, and belief systems, using AI as a creative tool — not a shortcut.
@@ -32,7 +32,7 @@ It’s about making Santa belong.
     link: "https://forms.gle/pFbdDXZ6LDRoxDvKA",
   },
   {
-    id: 22,
+    id: 24,
     name: "μSketch",
     shortname: "mu-sketch",
     description: `What if Christmas met design thinking?
@@ -54,7 +54,7 @@ Minimal, playful, or warm—your design should feel intentional and user-first.`
     link: "https://forms.gle/ikuiJ6hKaKBWrQ5c8",
   },
   {
-    id: 23,
+    id: 25,
     name: "SantaCraft Creative",
     shortname: "santacraft-creative",
     description: `The Creative Build: "Architects of Advent"
@@ -78,7 +78,7 @@ Register your team now & etch your legacy in the snow!`,
     link: "https://docs.google.com/forms/d/1VAkNyTQtuE3O-hRAnIQewylrWXOGY5wH7aOREbnRnAE/",
   },
   {
-    id: 24,
+    id: 26,
     name: "CTF",
     shortname: "ctf",
     description: `A 6-hour online cybersecurity contest where insight matters more than speed and precision outweighs guesswork.
@@ -141,32 +141,31 @@ This is where understanding leaves a trace.
     link: "http://makemypass.com/event/ctf-illu-nate",
   },
   {
-    id: 25,
-    name: "Santa’s Blog",
-    shortname: "santas-blog",
-    description: `Ever wondered what really happens behind the red suit? 🎅
-This Christmas, step into Santa’s shoes and tell your version of the night that keeps the world believing.
+    id: 27,
+    name: "SantaCraft Survival",
+    shortname: "santacraft-survival",
+    description: `The PvP Event: "Guardians of the Gift"
+ Three players, one life. Will you be the last team standing?
 
-Behind the Beard Man is a blog writing competition where you become Santa for a day — feeling the rush, the chaos, the joy, and the quiet moments no one talks about.
+Frostbite isn’t the only thing that bites in the SantaCraft Survival Games. This is a tactical, high-stakes arena where individual skill takes a backseat to team coordination. If your teammate falls, your chances of victory vanish.
 
-No myths. No fairytales.
-Just a story — from inside the suit.
+🌟Tactical Survival: Scavenge, gear up, and hold the high ground in a custom winter arena.
 
-📝 Write from the heart.
-🎄 Keep it real.
-✨ Let your words carry the magic.
-👤 Perspective: You, as Santa
+🌟Protect the Partner: Success is measured by how well you cover each other's backs. Flank, distraction, and rescue maneuvers are the keys to the crown.
 
-📅 Online Event
-📝 Registration Deadline: 02 Jan 2026
+Are you the shield or the sword? 
 
-No exaggeration. No clichés.
-Just a story that reminds us Santa is not a myth—but a man.`,
-    poster: "/events/south/santablog.webp",
-    link: "https://makemypass.com/event/behind-the-beard-man",
+📅Key Dates:
+
+📝Registration Deadline: 03 Jan 2026
+🚀Event Date: Jan 04, 2026
+
+Register your team now & etch your legacy in the snow!`,
+    poster: "/events/south/santacraftsurvival.webp",
+    link: "https://docs.google.com/forms/d/1VAkNyTQtuE3O-hRAnIQewylrWXOGY5wH7aOREbnRnAE/",
   },
   {
-    id: 26,
+    id: 28,
     name: "Santas Startup Pitch",
     shortname: "santas-startup-pitch",
     description: `Santa’s Shark Tank is a fun and creative online pitching event where Santa himself is the judge. Participants must think like Santa and pitch startup ideas that can help Santa.
@@ -192,7 +191,7 @@ LAST DATE TO REGISTER:- DECEMBER 31`,
     link: "https://makemypass.com/event/santas-shark-tank",
   },
   {
-    id: 27,
+    id: 29,
     name: "Meme-X",
     shortname: "meme-x",
     description: `What happens when Christmas meets humor?🤔 
@@ -213,15 +212,30 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
     link: "https://tinyurl.com/MEME-88",
   },
   {
-    id: 28,
+    id: 30,
     name: "Santa Hiring Vibathon",
     shortname: "santa-hiring-vibathon",
-    description: "Participate in community gift-giving initiatives.",
-    poster: null,
-    link: null,
+    description: `What if Santa hired his team like a tech startup? 🤔
+
+Santa Hiring Vibeathon is a beginner friendly challenge where participants create a fictional portfolio of an Elf or Reindeer applying to Santa’s workshop, showcasing creative ideas, skills, or smart tech concepts.
+
+Who is an Elf and Reindeer?🤔
+
+🧝‍♂️*Elf* :Creative builders of Santa’s workshop who design, manage, and optimize toy production.
+
+🦌 Reindeer  :Santa’s logistics and delivery experts.
+
+🧠 Task: Create a character based portfolio (Elf/Reindeer)  
+👤 Participation: Single  
+🌐 Mode: Online  
+📅 Submission Date: Jan 2  
+
+✨ Create. Innovate. Get hired by Santa.`,
+    poster: "/events/south/santahiringvibathon.webp",
+    link: "https://tinyurl.com/santahiring",
   },
   {
-    id: 29,
+    id: 31,
     name: "Music Event — μember",
     shortname: "music-event",
     description: "Participate in community gift-giving initiatives.",
@@ -229,7 +243,7 @@ Whether it’s subtle humor or laugh-out-loud content, let your meme reflect the
     link: null,
   },
   {
-    id: 30,
+    id: 32,
     name: "Who is Santa?",
     shortname: "who-is-santa",
     description: `Ever wondered who Santa really is? 🤔
@@ -250,7 +264,7 @@ Santa might be closer than you think😉`,
     link: "https://forms.gle/BEicek8MfH6GJwZx9",
   },
   {
-    id: 31,
+    id: 33,
     name: "Prompt-a-Palooza",
     shortname: "prompt-a-palooza",
     description: `This Christmas, ditch the paintbrush and let your words do the magic.
@@ -269,7 +283,7 @@ Step in, experiment, and surprise yourself. ✨
     link: "https://makemypass.com/event/prompt-a-palooza",
   },
   {
-    id: 32,
+    id: 34,
     name: "Christmas Courtroom",
     shortname: "christmas-courtroom",
     description: `Santa Claus’s sleigh has been stolen, throwing the North Pole into chaos. With conflicting statements and hidden clues, the truth is anything but obvious.
@@ -296,27 +310,28 @@ People who enjoy analysing situations and questioning narratives
     link: "https://makemypass.com/event/christmas-courtroom",
   },
   {
-    id: 33,
-    name: "SantaCraft Survival",
-    shortname: "santacraft-survival",
-    description: `The PvP Event: "Guardians of the Gift"
- Three players, one life. Will you be the last team standing?
+    id: 35,
+    name: "Santa’s Blog",
+    shortname: "santas-blog",
+    description: `Ever wondered what really happens behind the red suit? 🎅
+This Christmas, step into Santa’s shoes and tell your version of the night that keeps the world believing.
 
-Frostbite isn’t the only thing that bites in the SantaCraft Survival Games. This is a tactical, high-stakes arena where individual skill takes a backseat to team coordination. If your teammate falls, your chances of victory vanish.
+Behind the Beard Man is a blog writing competition where you become Santa for a day — feeling the rush, the chaos, the joy, and the quiet moments no one talks about.
 
-🌟Tactical Survival: Scavenge, gear up, and hold the high ground in a custom winter arena.
+No myths. No fairytales.
+Just a story — from inside the suit.
 
-🌟Protect the Partner: Success is measured by how well you cover each other's backs. Flank, distraction, and rescue maneuvers are the keys to the crown.
+📝 Write from the heart.
+🎄 Keep it real.
+✨ Let your words carry the magic.
+👤 Perspective: You, as Santa
 
-Are you the shield or the sword? 
+📅 Online Event
+📝 Registration Deadline: 02 Jan 2026
 
-📅Key Dates:
-
-📝Registration Deadline: 03 Jan 2026
-🚀Event Date: Jan 04, 2026
-
-Register your team now & etch your legacy in the snow!`,
-    poster: "/events/south/santacraftsurvival.webp",
-    link: "https://docs.google.com/forms/d/1VAkNyTQtuE3O-hRAnIQewylrWXOGY5wH7aOREbnRnAE/",
+No exaggeration. No clichés.
+Just a story that reminds us Santa is not a myth—but a man.`,
+    poster: "/events/south/santablog.webp",
+    link: "https://makemypass.com/event/behind-the-beard-man",
   },
 ];

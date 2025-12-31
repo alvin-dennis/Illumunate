@@ -2,7 +2,7 @@ import { ZonalEvents } from "@/lib/types";
 
 export const centralEvents: ZonalEvents["central"] = [
   {
-    id: 10,
+    id: 12,
     name: "Twinkling Tunes",
     shortname: "twinkling-tunes",
     description: `Hey, Is your Christmas tree taller than you? 🎄
@@ -29,7 +29,7 @@ We’re here to test your creativity × electronics ⚡`,
     link: "https://forms.gle/eBzSLXMGv2CTWzNJ6",
   },
   {
-    id: 11,
+    id: 13,
     name: "Code a Snowman",
     shortname: "code-a-snowman",
     description: `“Code a Snowman” is a creative web dev event where you design and build your own snowman using HTML & CSS .
@@ -60,7 +60,7 @@ If you can imagine a snowman, you can code one here. Come for the learning, stay
     link: "https://airtable.com/applurWRIdGUDbXcf/pagkbJWsjmhJdaIoP/form",
   },
   {
-    id: 12,
+    id: 14,
     name: "μ-me",
     shortname: "mu-me",
     description: `Ever wondered what Santa's LinkedIn would look like? 🤔 
@@ -86,7 +86,7 @@ Time to make Santa's Resume merrier than ever! 🎅🎁`,
     link: "https://forms.gle/z7gSNKryzZfnJXKs9",
   },
   {
-    id: 13,
+    id: 15,
     name: "Word of the Year",
     shortname: "word-of-the-year",
     description: `If 2025 had to be summed up in just ONE word, what would it be? 🤔💭 
@@ -114,7 +114,7 @@ One word. Infinite meaning. Make it count ! 💫`,
     link: "https://forms.gle/caxNxrFHrX8PoubQ6",
   },
   {
-    id: 14,
+    id: 16,
     name: "Treasure Hunt",
     shortname: "treasure-hunt",
     description: `Santa's lost his way from the North Pole to Kerala, and he needs YOUR help! 🎄✨
@@ -139,34 +139,27 @@ The hunt is on—let the adventure begin`,
     link: "https://forms.gle/gEt4mfsybFD7VefK9",
   },
   {
-    id: 15,
-    name: "Santa’s Vlog",
-    shortname: "santas-vlog",
-    description: `What if Santa had a YouTube channel? 🤔✨ 
-Now's your chance to create it! Use the power of AI to bring Santa to life in a heartwarming video vlog. 
+    id: 17,
+    name: "Hunter Claus",
+    shortname: "hunter-claus",
+    description: `Ho ho WHOA! 😱🎄 Get ready for the most festive battle you've ever played! 
+Step into a Christmas-themed BGMI solo match. Play as a jolly Santa trying to survive, or become a Hunter on a mission to take down every Santa in sight! 🔫🎁
 
-This isn't about fancy editing—it's about storytelling from the heart! Explore AI and craft a vlog that's warm and totally YOU. Perfect for the µLearn spirit of learning by doing! 🚀
+Limited weapons. Strict combat rules. Pure holiday chaos. This isn't your average match—it's Christmas with a competitive twist! Will you spread cheer or spread fear? 🎅💥
 
-Focus Areas:
+💻 Mode: Online – Solo Match 🎮
 
-🎭 Storytelling & Emotion
-✨ Creativity
-🎄 Relevance to Theme
-🤖 AI Usage
-📖 Clarity & Flow
+📝 Registration Dates:  1st January 2026
 
-💻 Mode: Online 🌐
+📅 Event Date & Time:  1st January 2026 7:00 - 8:00 PM
 
-📝 Registration Date: 28-30th December 2025
-📅 Deadline: 2nd January 2026
-
-🤔 Why join? 
-Because Santa's story deserves to be told YOUR way!  And who knows? You might just create the most heartwarming vlog of the season! 🎁❤️`,
-    poster: "/events/central/santavlog.webp",
-    link: "https://forms.gle/MSN5GEgFSwvKev1j8",
+🤔 Why join?
+Because gaming gets even better when you add Christmas madness to it! Test your BGMI skills in a unique festive format, follow the challenge of restricted gameplay, and prove you're the ultimate Santa survivor or Hunter champion! 🏆🎄`,
+    poster: "/events/central/hunterclaus.webp",
+    link: "https://forms.gle/woKa5gnCdAb3R4sh8",
   },
   {
-    id: 16,
+    id: 18,
     name: "Debate",
     shortname: "debate",
     description: `Ready to put your thinking cap on and battle it out with words? ⚔️🧠 
@@ -193,7 +186,7 @@ May the best argument win! 🏆💬`,
     link: "https://airtable.com/app8ocByORGDmAi5u/pagOt2ZZhpjNuRbvX/form",
   },
   {
-    id: 17,
+    id: 19,
     name: "Think Ovation",
     shortname: "think-ovation",
     description: `Got a game-changing idea that could make the world better? 🌍✨ 
@@ -226,7 +219,7 @@ Because every world-changing idea starts with someone brave enough to share it! 
     link: "https://forms.gle/v6fUHboppM98Xsu19",
   },
   {
-    id: 18,
+    id: 20,
     name: "Santa’s Portfolio",
     shortname: "santas-portfolio",
     description: `What if Santa needed a portfolio website? 🤔✨ 
@@ -254,7 +247,7 @@ Code it. Design it. Make it magical! ✨🖥️`,
     link: "https://airtable.com/appX1hCO1nqyGm8Ar/pagxReq9qrIcSHnqy/form",
   },
   {
-    id: 19,
+    id: 21,
     name: "Code of Eve",
     shortname: "code-of-eve",
     description: `Ready to code some Christmas magic? ✨👨‍💻 
@@ -282,23 +275,30 @@ Code. Deploy. Spread the cheer! 🎄💚`,
     link: "https://airtable.com/appt8Tm0mZgUzDw13/paggU4MSTHu8HIuHC/form",
   },
   {
-    id: 20,
-    name: "Hunter Claus",
-    shortname: "hunter-claus",
-    description: `Ho ho WHOA! 😱🎄 Get ready for the most festive battle you've ever played! 
-Step into a Christmas-themed BGMI solo match. Play as a jolly Santa trying to survive, or become a Hunter on a mission to take down every Santa in sight! 🔫🎁
+    id: 22,
+    name: "Santa’s Vlog",
+    shortname: "santas-vlog",
+    description: `What if Santa had a YouTube channel? 🤔✨ 
+Now's your chance to create it! Use the power of AI to bring Santa to life in a heartwarming video vlog. 
 
-Limited weapons. Strict combat rules. Pure holiday chaos. This isn't your average match—it's Christmas with a competitive twist! Will you spread cheer or spread fear? 🎅💥
+This isn't about fancy editing—it's about storytelling from the heart! Explore AI and craft a vlog that's warm and totally YOU. Perfect for the µLearn spirit of learning by doing! 🚀
 
-💻 Mode: Online – Solo Match 🎮
+Focus Areas:
 
-📝 Registration Dates:  1st January 2026
+🎭 Storytelling & Emotion
+✨ Creativity
+🎄 Relevance to Theme
+🤖 AI Usage
+📖 Clarity & Flow
 
-📅 Event Date & Time:  1st January 2026 7:00 - 8:00 PM
+💻 Mode: Online 🌐
 
-🤔 Why join?
-Because gaming gets even better when you add Christmas madness to it! Test your BGMI skills in a unique festive format, follow the challenge of restricted gameplay, and prove you're the ultimate Santa survivor or Hunter champion! 🏆🎄`,
-    poster: "/events/central/hunterclaus.webp",
-    link: "https://forms.gle/woKa5gnCdAb3R4sh8",
+📝 Registration Date: 28-30th December 2025
+📅 Deadline: 2nd January 2026
+
+🤔 Why join? 
+Because Santa's story deserves to be told YOUR way!  And who knows? You might just create the most heartwarming vlog of the season! 🎁❤️`,
+    poster: "/events/central/santavlog.webp",
+    link: "https://forms.gle/MSN5GEgFSwvKev1j8",
   },
 ];
