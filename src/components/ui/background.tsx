@@ -1,64 +1,117 @@
-"use client"
+import React from 'react';
 
-import { useIsMobile } from '@/hooks/useMobile'
-import { ShaderGradientCanvas, ShaderGradient } from '@shadergradient/react'
-
-export default function Background() {
-    const isMobile = useIsMobile();
-    return (
-        <ShaderGradientCanvas
-            style={{
-                width: '100%',
-                height: '100%',
-                opacity: 0.3,
-            }}
-            lazyLoad={true}
-            fov={35}
-            pixelDensity={isMobile ? 0.75 : 1} 
-            pointerEvents="none"
-        >
-            <ShaderGradient
-                animate={isMobile ? "off" : "on"}
-                type={isMobile ? "plane" : "waterPlane"}
-                wireframe={false}
-                shader="positionMix"
-                uTime={isMobile ? 0 : 10}
-                uSpeed={isMobile ? 0 : 0.4}
-                uStrength={isMobile ? 1 : 2}
-                uDensity={isMobile ? 1 : 2}
-                uFrequency={0}
-                uAmplitude={0}
-                positionX={0}
-                positionY={0}
-                positionZ={0}
-                rotationX={2}
-                rotationY={21}
-                rotationZ={0}
-                color1="#040927"
-                color2="#c22938"
-                color3="#e16f23"
-                reflection={0.3}
-
-                // View (camera) props
-                cAzimuthAngle={180}
-                cPolarAngle={90}
-                cDistance={3.5}
-                cameraZoom={7}
-
-                // Effect props
-                lightType="env"
-                brightness={1.1}
-                envPreset="lobby"
-                grain="on"
-
-                // Tool props
-                toggleAxis={false}
-                zoomOut={false}
-                hoverState=""
-
-                // Optional - if using transition features
-                enableTransition={false}
-            />
-        </ShaderGradientCanvas>
-    )
+interface GradientBarsProps {
+    numBars?: number;
+    gradientFrom?: string;
+    gradientTo?: string;
+    animationDuration?: number;
+    className?: string;
 }
+
+const GradientBars: React.FC<GradientBarsProps> = ({
+    numBars = 15,
+    gradientFrom = 'rgba(254, 26, 27, 1)',
+    gradientTo = 'transparent',
+    animationDuration = 2,
+    className = '',
+}) => {
+    const calculateHeight = (index: number, total: number) => {
+        const position = index / (total - 1);
+        const maxHeight = 100;
+        const minHeight = 30;
+
+        const center = 0.5;
+        const distanceFromCenter = Math.abs(position - center);
+        const heightPercentage = Math.pow(distanceFromCenter * 2, 1.2);
+
+        return minHeight + (maxHeight - minHeight) * heightPercentage;
+    };
+
+    return (
+        <>
+            <style>{`
+        @keyframes pulseBar {
+          0% { transform: scaleY(var(--initial-scale)); }
+          100% { transform: scaleY(calc(var(--initial-scale) * 0.7)); }
+        }
+      `}</style>
+
+            <div className={`absolute inset-0 z-0 overflow-hidden ${className}`}>
+                <div
+                    className="flex h-full"
+                    style={{
+                        width: '100%',
+                        transform: 'translateZ(0)',
+                        backfaceVisibility: 'hidden',
+                        WebkitFontSmoothing: 'antialiased',
+                    }}
+                >
+                    {Array.from({ length: numBars }).map((_, index) => {
+                        const height = calculateHeight(index, numBars);
+                        return (
+                            <div
+                                key={index}
+                                style={{
+                                    flex: `1 0 calc(100% / ${numBars})`,
+                                    maxWidth: `calc(100% / ${numBars})`,
+                                    height: '100%',
+                                    background: `linear-gradient(to top, ${gradientFrom}, ${gradientTo})`,
+                                    transform: `scaleY(${height / 100})`,
+                                    transformOrigin: 'bottom',
+                                    transition: 'transform 0.5s ease-in-out',
+                                    animation: `pulseBar ${animationDuration}s ease-in-out infinite alternate`,
+                                    animationDelay: `${index * 0.1}s`,
+                                    outline: '1px solid rgba(0, 0, 0, 0)',
+                                    boxSizing: 'border-box',
+                                    opacity: 0.2,
+                                    // @ts-ignore
+                                    '--initial-scale': height / 100,
+                                }}
+                            />
+                        );
+                    })}
+                </div>
+            </div>
+        </>
+    );
+};
+
+interface ComponentProps {
+    numBars?: number;
+    gradientFrom?: string;
+    gradientTo?: string;
+    animationDuration?: number;
+    backgroundColor?: string;
+    children?: React.ReactNode;
+}
+
+export default function Background({
+    numBars = 7,
+    gradientFrom = 'rgba(254, 26, 27, 1)',
+    gradientTo = 'transparent',
+    animationDuration = 2,
+    backgroundColor = 'rgb(10, 10, 10)',
+    children,
+}: ComponentProps) {
+    return (
+        <section
+            className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden"
+            style={{ backgroundColor }}
+        >
+            <GradientBars
+                numBars={numBars}
+                gradientFrom={gradientFrom}
+                gradientTo={gradientTo}
+                animationDuration={animationDuration}
+            />
+
+            {children && (
+                <div className="relative z-10 w-full h-full flex items-center justify-center px-4">
+                    {children}
+                </div>
+            )}
+        </section>
+    );
+}
+
+export { Background };

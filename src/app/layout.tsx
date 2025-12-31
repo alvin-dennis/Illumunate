@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Suspense } from "react";
 import "./globals.css";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 import Background from "@/components/ui/background";
+
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/next";
-
 
 export const metadata: Metadata = {
   title: "Illuµnate — µLearn",
   description:
     "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
   authors: [{ name: "µLearn", url: "https://illumunate.mulearn.org/" }],
+  metadataBase: new URL("https://illumunate.mulearn.org/"),
   openGraph: {
     title: "Illuµnate — µLearn",
     description:
@@ -33,14 +35,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Illuµnate — µLearn",
     description:
-      "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn. Join exciting events, explore creative zones, and enjoy fun competitions across colleges!",
+      "Celebrate the festive spirit with Illuµnate, the Christmas festival conducted by µLearn.",
     images: ["/logo.svg"],
   },
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
   },
-  metadataBase: new URL("https://illumunate.mulearn.org/"),
 };
 
 const circe = localFont({
@@ -57,9 +58,9 @@ const helvetica = localFont({
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -70,13 +71,17 @@ export default function RootLayout({
         </div>
         <Navbar />
         <Suspense fallback={<Loader />}>
-          <Toaster position="top-center" richColors expand={false} theme="dark" />
-            {children}
+          {children}
         </Suspense>
         <Footer />
+        <Toaster
+          position="top-center"
+          richColors
+          expand={false}
+          theme="dark"
+        />
         <Analytics />
       </body>
     </html>
-
   );
 }
