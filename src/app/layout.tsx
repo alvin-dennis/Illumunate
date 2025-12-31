@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 import Background from "@/components/ui/background";
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/next";
 
 
 export const metadata: Metadata = {
@@ -73,6 +74,7 @@ export default function RootLayout({
             {children}
         </Suspense>
         <Footer />
+        <Analytics />
       </body>
     </html>
 
